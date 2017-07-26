@@ -128,7 +128,7 @@ public void postCondition()
 	System.out.println("Browsers are closed");
 }
 
-@BeforeTest
+/*@BeforeTest
 public void openExcel()
 {
 	workbook=new HSSFWorkbook();
@@ -174,6 +174,6 @@ public void closeExcel()
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-}
+}*/
 }
 
