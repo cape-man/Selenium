@@ -4,7 +4,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.POM.Canvas;
-import com.POM.CanvasHomePage;
+import com.POM.TenantUserProject;
 import com.POM.HomePage;
 import com.canvashomepage.scripts.BaseTest;
 
@@ -17,12 +17,13 @@ public void testDeleteCanvasFromGlobalBoilerPlate()
 	Reporter.log("******************************DeleteCanvasFromGlobalBoilerPlate******************************");
 	HomePage homepage=new HomePage(driver);
 	homepage.validLogIn();
-	CanvasHomePage canvashomepage=new CanvasHomePage(driver);
+	TenantUserProject canvashomepage=new TenantUserProject(driver);
 	Canvas canvas=new Canvas(driver);
 	canvashomepage.clickProject();
 	canvashomepage.clickCanvas("Use as Canvas");
 	canvas.clickDropdownButton();
-	canvas.DeleteCanvas();
+	canvas.deleteCanvas();
+	canvas.confirmDeleteCanvas();
 	System.out.println("******************************DeleteCanvasFromGlobalBoilerPlate******************************");
 	Reporter.log("******************************DeleteCanvasFromGlobalBoilerPlate******************************");
 }

@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import com.POM.CanvasHomePage;
+import com.POM.TenantUserProject;
 import com.POM.HomePage;
 import com.canvashomepage.scripts.BaseTest;
 
@@ -18,8 +18,9 @@ public void testUpdateCanvas()
 	Reporter.log("******************************UpdateCanvas******************************");
 	HomePage homepage=new HomePage(driver);
 	homepage.validLogIn();
-	CanvasHomePage canvashomepage=new CanvasHomePage(driver);
+	TenantUserProject canvashomepage=new TenantUserProject(driver);
 	canvashomepage.clickProject();
+	canvashomepage.clickEditButton("Automation Canvas");
 	canvashomepage.editCanvas();
 	Assert.assertEquals(driver.findElement(By.xpath("//p[text()='Automation Canvas Updated']")).isDisplayed(), true);
 	System.out.println("******************************UpdateCanvas******************************");

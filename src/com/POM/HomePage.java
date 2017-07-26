@@ -16,7 +16,7 @@ public class HomePage
 	@FindBy(name="cusername")
 	private WebElement usernametextbox;
 	
-	@FindBy(name="password")
+	@FindBy(xpath="//input[@placeholder='Password']")
 	private WebElement passwordtextbox;
 	
 	@FindBy(xpath="//button[@class='block m-b login-button ng-isolate-scope ladda-button']")

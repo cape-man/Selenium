@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>43/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/6</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 06 15:18:33 IST 2017</td>
+<td>Started on:</td><td>Wed Jul 26 15:54:29 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>1885 seconds (1885097 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4799 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,840 +67,194 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.rootadmin.scripts.ChangeTenantAdminStatusToInactive.ChangeTenantAdminStatusToInactive()'><b>ChangeTenantAdminStatusToInactive</b><br>Test class: com.rootadmin.scripts.ChangeTenantAdminStatusToInactive<br/>
-<a href="#Output-1043317832" onClick='toggleBox("Output-1043317832", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1043317832" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1043317832">
-******************************ChangeTenantAdminStatusToInactive******************************<br/>
-Step1:Logged in as Root Admin<br/>
-clicked on Tenant link<br/>
-selected the tenant<br/>
-clicked on edit button for Tenant Admin<br/>
-Changed Tenant Admin to Inactive status<br/>
-******************************ChangeTenantAdminStatusToInactive******************************<br/>
-</div>
-</td>
-<td></td>
-<td>11</td>
-<td>com.rootadmin.scripts.ChangeTenantAdminStatusToInactive@685cb137</td></tr>
+<td title='com.sampledotnetscripts.CreatePost.preCondition()'><b>preCondition</b><br>Test class: com.sampledotnetscripts.CreatePost</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: The browser is shutting down.
+JavaScript stack:
+Error: The browser is shutting down.
+    at checkForExtensionError (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:14:17)
+    at Object.callback (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:67:5)
+    at safeCallbackApply (extensions::uncaught_exception_handler:27:15)
+    at handleResponse (extensions::sendRequest:67:7)
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.31 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;A2ML16237&apos;, ip: &apos;172.23.28.54&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\m1021092\AppData\Local\Temp\scoped_dir13052_18801}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: ae042ac2c82bce40a7e1ed8c1d4cb0fe
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at com.canvashomepage.scripts.BaseTest.preCondition(BaseTest.java:82)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace838473569", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace838473569'><pre>org.openqa.selenium.WebDriverException: unknown error: The browser is shutting down.
+JavaScript stack:
+Error: The browser is shutting down.
+    at checkForExtensionError (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:14:17)
+    at Object.callback (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:67:5)
+    at safeCallbackApply (extensions::uncaught_exception_handler:27:15)
+    at handleResponse (extensions::sendRequest:67:7)
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.31 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;A2ML16237&apos;, ip: &apos;172.23.28.54&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\m1021092\AppData\Local\Temp\scoped_dir13052_18801}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: ae042ac2c82bce40a7e1ed8c1d4cb0fe
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at com.canvashomepage.scripts.BaseTest.preCondition(BaseTest.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+</pre></div></td>
+<td>0</td>
+<td>com.sampledotnetscripts.CreatePost@1c53fd30</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.dataclear.scripts.DataClear.clearData()'><b>clearData</b><br>Test class: com.dataclear.scripts.DataClear<br/>
-<a href="#Output-1022308509" onClick='toggleBox("Output-1022308509", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1022308509" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1022308509">
-********************DataClear********************<br/>
-********************DataClear********************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.EditPost.preCondition()'><b>preCondition</b><br>Test class: com.sampledotnetscripts.EditPost</td>
 <td></td>
-<td>3</td>
-<td>com.dataclear.scripts.DataClear@59f99ea</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.EditPost@50cbc42f</td></tr>
 <tr>
-<td title='com.rootadmin.scripts.ChangePasswordForPlatformAdmin.testChangePasswordForPlatformAdmin()'><b>testChangePasswordForPlatformAdmin</b><br>Test class: com.rootadmin.scripts.ChangePasswordForPlatformAdmin<br/>
-<a href="#Output-1060042118" onClick='toggleBox("Output-1060042118", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1060042118" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1060042118">
-******************************ChangePasswordForPlatformAdmin******************************<br/>
-Step1:Logged in as Root Admin<br/>
-navidated to root admin platform admin page<br/>
-clicked on edit button of platform admin<br/>
-entered new password for platform admin<br/>
-clicked on Update button<br/>
-******************************ChangePasswordForPlatformAdmin******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.DeletePost.preCondition()'><b>preCondition</b><br>Test class: com.sampledotnetscripts.DeletePost</td>
 <td></td>
-<td>11</td>
-<td>com.rootadmin.scripts.ChangePasswordForPlatformAdmin@1e88b3c</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.DeletePost@75412c2f</td></tr>
 <tr>
-<td title='com.rootadmin.scripts.ChangePlatformAdminStatusToActive.testChangePlatformAdminStatusToActive()'><b>testChangePlatformAdminStatusToActive</b><br>Test class: com.rootadmin.scripts.ChangePlatformAdminStatusToActive<br/>
-<a href="#Output-1985028494" onClick='toggleBox("Output-1985028494", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1985028494" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1985028494">
-******************************ChangePlatformAdminStatusToActive******************************<br/>
-Step1:Logged in as Root Admin<br/>
-navidated to root admin platform admin page<br/>
-clicked on edit button of platform admin<br/>
-changed the status of platform admin from Inactive to Active<br/>
-clicked on Update button<br/>
-******************************ChangePlatformAdminStatusToActive******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.CreateTag.preCondition()'><b>preCondition</b><br>Test class: com.sampledotnetscripts.CreateTag</td>
 <td></td>
-<td>16</td>
-<td>com.rootadmin.scripts.ChangePlatformAdminStatusToActive@77caeb3e</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.CreateTag@282ba1e</td></tr>
 <tr>
-<td title='com.rootadmin.scripts.ChangePlatformAdminStatusToInactive.testChangePlatformAdminStatusToInactive()'><b>testChangePlatformAdminStatusToInactive</b><br>Test class: com.rootadmin.scripts.ChangePlatformAdminStatusToInactive<br/>
-<a href="#Output-1662592920" onClick='toggleBox("Output-1662592920", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1662592920" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1662592920">
-******************************ChangePlatformAdminStatusToInactive******************************<br/>
-Step1:Logged in as Root Admin<br/>
-navidated to root admin platform admin page<br/>
-clicked on edit button of platform admin<br/>
-changed the status of platform admin from Active to Inactive<br/>
-clicked on Update button<br/>
-******************************ChangePlatformAdminStatusToInactive******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.EditTag.preCondition()'><b>preCondition</b><br>Test class: com.sampledotnetscripts.EditTag</td>
 <td></td>
-<td>15</td>
-<td>com.rootadmin.scripts.ChangePlatformAdminStatusToInactive@3e6fa38a</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.EditTag@13b6d03</td></tr>
 <tr>
-<td title='com.tenantadmin.scripts.ChangeProjectStatusToActive.testChangeProjectStatusToActive()'><b>testChangeProjectStatusToActive</b><br>Test class: com.tenantadmin.scripts.ChangeProjectStatusToActive<br/>
-<a href="#Output-1447685190" onClick='toggleBox("Output-1447685190", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1447685190" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1447685190">
-******************************ChangeProjectStatusToActive******************************<br/>
-Step1:Logged in as Tenant Admin<br/>
-clicked on edit button<br/>
-changed status of the project to active<br/>
-******************************ChangeProjectStatusToActive******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.DeleteTag.preCondition()'><b>preCondition</b><br>Test class: com.sampledotnetscripts.DeleteTag</td>
 <td></td>
-<td>11</td>
-<td>com.tenantadmin.scripts.ChangeProjectStatusToActive@1794d431</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.DeleteTag@f5f2bb7</td></tr>
 <tr>
-<td title='com.tenantadmin.scripts.ChangeProjectStatusToInactive.testChangeProjectStatusToInactive()'><b>testChangeProjectStatusToInactive</b><br>Test class: com.tenantadmin.scripts.ChangeProjectStatusToInactive<br/>
-<a href="#Output-687892306" onClick='toggleBox("Output-687892306", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-687892306" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-687892306">
-******************************ChangeProjectStatusToInactive******************************<br/>
-Step1:Logged in as Tenant Admin<br/>
-selected project<br/>
-clicked on edit button<br/>
-changed status of the project to inactive<br/>
-******************************ChangeProjectStatusToInactive******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.CreatePost.postCondition()'><b>postCondition</b><br>Test class: com.sampledotnetscripts.CreatePost</td>
 <td></td>
-<td>11</td>
-<td>com.tenantadmin.scripts.ChangeProjectStatusToInactive@39c0f4a</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.CreatePost@1c53fd30</td></tr>
 <tr>
-<td title='com.rootadmin.scripts.ChangeTenantAdminStatusToActive.testChangeTenantAdminStatusToActive()'><b>testChangeTenantAdminStatusToActive</b><br>Test class: com.rootadmin.scripts.ChangeTenantAdminStatusToActive<br/>
-<a href="#Output-275754769" onClick='toggleBox("Output-275754769", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-275754769" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-275754769">
-******************************ChangeTenantAdminStatusToActive******************************<br/>
-Step1:Logged in as Root Admin<br/>
-clicked on Tenant link<br/>
-selected the tenant<br/>
-clicked on edit button for Tenant Admin<br/>
-Changed Tenant Admin to Inactive status<br/>
-******************************ChangeTenantAdminStatusToActive******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.EditPost.postCondition()'><b>postCondition</b><br>Test class: com.sampledotnetscripts.EditPost</td>
 <td></td>
-<td>11</td>
-<td>com.rootadmin.scripts.ChangeTenantAdminStatusToActive@7cd62f43</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.EditPost@50cbc42f</td></tr>
 <tr>
-<td title='com.rootadmin.scripts.ChangeTenantStatusToActive.testChangeTenantStatusToActive()'><b>testChangeTenantStatusToActive</b><br>Test class: com.rootadmin.scripts.ChangeTenantStatusToActive<br/>
-<a href="#Output-1029898472" onClick='toggleBox("Output-1029898472", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1029898472" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1029898472">
-******************************ChangeTenantStatusToActive******************************<br/>
-Step1:Logged in as Root Admin<br/>
-clicked on Tenant link<br/>
-clicked on edit button<br/>
-Changed Tenant to Active status<br/>
-******************************ChangeTenantStatusToActive******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.DeletePost.postCondition()'><b>postCondition</b><br>Test class: com.sampledotnetscripts.DeletePost</td>
 <td></td>
-<td>13</td>
-<td>com.rootadmin.scripts.ChangeTenantStatusToActive@91161c7</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.DeletePost@75412c2f</td></tr>
 <tr>
-<td title='com.rootadmin.scripts.ChangeTenantStatusToInactive.testChangeTenantStatusToInactive()'><b>testChangeTenantStatusToInactive</b><br>Test class: com.rootadmin.scripts.ChangeTenantStatusToInactive<br/>
-<a href="#Output-2121317689" onClick='toggleBox("Output-2121317689", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2121317689" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2121317689">
-******************************ChangeTenantStatusToInactive******************************<br/>
-Step1:Logged in as Root Admin<br/>
-clicked on Tenant link<br/>
-selected the tenant<br/>
-clicked on edit button<br/>
-Changed Tenant to Inactive status<br/>
-******************************ChangeTenantStatusToInactive******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.CreateTag.postCondition()'><b>postCondition</b><br>Test class: com.sampledotnetscripts.CreateTag</td>
 <td></td>
-<td>13</td>
-<td>com.rootadmin.scripts.ChangeTenantStatusToInactive@5c3bd550</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.CreateTag@282ba1e</td></tr>
 <tr>
-<td title='com.compose.scripts.CreateCanvas.testCreateCanvas()'><b>testCreateCanvas</b><br>Test class: com.compose.scripts.CreateCanvas<br/>
-<a href="#Output-332498651" onClick='toggleBox("Output-332498651", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-332498651" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-332498651">
-******************************CreateCanvas******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-clicked on project: Automation Project<br/>
-clicked on create canvas button<br/>
-entered canvas name<br/>
-entered canvas description<br/>
-clicked on create canvas submit button<br/>
-Step3:Successfully created canvas with name Automation Canvas<br/>
-******************************CreateCanvas******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.EditTag.postCondition()'><b>postCondition</b><br>Test class: com.sampledotnetscripts.EditTag</td>
 <td></td>
-<td>12</td>
-<td>com.compose.scripts.CreateCanvas@53b32d7</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.EditTag@13b6d03</td></tr>
 <tr>
-<td title='com.rootadmin.scripts.CreatePlatformAdmin.testCreatePlatformAdmin()'><b>testCreatePlatformAdmin</b><br>Test class: com.rootadmin.scripts.CreatePlatformAdmin<br/>
-<a href="#Output-1244867001" onClick='toggleBox("Output-1244867001", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1244867001" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1244867001">
-******************************CreatePlatformAdmin******************************<br/>
-Step1:Logged in as Root Admin<br/>
-navigated to root admin platform admin page<br/>
-clicked on Create Admin button<br/>
-entered platform admin name<br/>
-entered platform admin userid<br/>
-entered platform admin email id<br/>
-entered platform admin password<br/>
-clicked on create platform admin submit button<br/>
-******************************CreatePlatformAdmin******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.DeleteTag.postCondition()'><b>postCondition</b><br>Test class: com.sampledotnetscripts.DeleteTag</td>
 <td></td>
-<td>10</td>
-<td>com.rootadmin.scripts.CreatePlatformAdmin@6f7fd0e6</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.DeleteTag@f5f2bb7</td></tr>
 <tr>
-<td title='com.tenantadmin.scripts.CreateProject.testCreateProject()'><b>testCreateProject</b><br>Test class: com.tenantadmin.scripts.CreateProject<br/>
-<a href="#Output-1744713739" onClick='toggleBox("Output-1744713739", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1744713739" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1744713739">
-******************************CreateProject******************************<br/>
-Step1:Logged in as Tenant Admin<br/>
-clicked on create project button<br/>
-entered project name<br/>
-entered project description<br/>
-step5: Created a new project: Automation Project<br/>
-******************************CreateProject******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.CreatePost.closeExcel()'><b>closeExcel</b><br>Test class: com.sampledotnetscripts.CreatePost</td>
 <td></td>
-<td>9</td>
-<td>com.tenantadmin.scripts.CreateProject@4883b407</td></tr>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.rootadmin.scripts.CreateTenant.testCreateTenant()'><b>testCreateTenant</b><br>Test class: com.rootadmin.scripts.CreateTenant<br/>
-<a href="#Output-636959006" onClick='toggleBox("Output-636959006", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-636959006" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-636959006">
-******************************CreateTenant******************************<br/>
-Step1:Logged in as Root Admin<br/>
-clicked on Tenant link<br/>
-clicked on create tenant button<br/>
-Entered tenant name<br/>
-Entered tenant description<br/>
-clicked on Add Tenant submit button<br/>
-step2: created new tenant: Automation Tenant<br/>
-******************************CreateTenant******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.CreatePost.testCreatePost()'><b>testCreatePost</b><br>Test class: com.sampledotnetscripts.CreatePost</td>
 <td></td>
-<td>12</td>
-<td>com.rootadmin.scripts.CreateTenant@1bce4f0a</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.CreatePost@1c53fd30</td></tr>
 <tr>
-<td title='com.rootadmin.scripts.CreateTenantAdmin.testCreateTenantAdmin()'><b>testCreateTenantAdmin</b><br>Test class: com.rootadmin.scripts.CreateTenantAdmin<br/>
-<a href="#Output-214320652" onClick='toggleBox("Output-214320652", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-214320652" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-214320652">
-******************************CreateTenantAdmin******************************<br/>
-Step1:Logged in as Root Admin<br/>
-clicked on Tenant link<br/>
-selected the tenant<br/>
-clicked on create user button<br/>
-entered name<br/>
-entered userid<br/>
-entered email<br/>
-entered password<br/>
-entered confirm password<br/>
-clicked on manage tenant user and project checkbox<br/>
-clicked on create user submit button<br/>
-step3: created tenant admin with name Automation Admin<br/>
-******************************CreateTenantAdmin******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.CreateTag.testCreateTag()'><b>testCreateTag</b><br>Test class: com.sampledotnetscripts.CreateTag</td>
 <td></td>
-<td>13</td>
-<td>com.rootadmin.scripts.CreateTenantAdmin@604ed9f0</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.CreateTag@282ba1e</td></tr>
 <tr>
-<td title='com.tenantadmin.scripts.CreateUser.testCreateUser()'><b>testCreateUser</b><br>Test class: com.tenantadmin.scripts.CreateUser<br/>
-<a href="#Output-468776694" onClick='toggleBox("Output-468776694", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-468776694" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-468776694">
-******************************CreateUser******************************<br/>
-Step1:Logged in as Tenant Admin<br/>
-clicked on create user button<br/>
-entered name<br/>
-entered userid<br/>
-entered email<br/>
-entered password<br/>
-entered confirm password<br/>
-clicked on Designer checkbox<br/>
-clicked on Engineer checkbox<br/>
-clicked on Manager checkbox<br/>
-clicked on create user submit button<br/>
-step3: cretaed tenant user with name Automation User<br/>
-******************************CreateUser******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.DeletePost.testDeletePost()'><b>testDeletePost</b><br>Test class: com.sampledotnetscripts.DeletePost</td>
 <td></td>
-<td>16</td>
-<td>com.tenantadmin.scripts.CreateUser@5622fdf</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.DeletePost@75412c2f</td></tr>
 <tr>
-<td title='com.boilerplate.scripts.DeleteCanvasFromGlobalBoilerPlate.testDeleteCanvasFromGlobalBoilerPlate()'><b>testDeleteCanvasFromGlobalBoilerPlate</b><br>Test class: com.boilerplate.scripts.DeleteCanvasFromGlobalBoilerPlate<br/>
-<a href="#Output-1343835789" onClick='toggleBox("Output-1343835789", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1343835789" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1343835789">
-******************************DeleteCanvasFromGlobalBoilerPlate******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-clicked on project: Automation Project<br/>
-Step3:Clicked on canvas Use as Canvas<br/>
-clicked on dropdown button<br/>
-clicked on delete canvas link<br/>
-clicked yes on delete canvas confirm pop up<br/>
-Step5: Canvas deleted successfully<br/>
-******************************DeleteCanvasFromGlobalBoilerPlate******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.DeleteTag.testDeleteTag()'><b>testDeleteTag</b><br>Test class: com.sampledotnetscripts.DeleteTag</td>
 <td></td>
-<td>22</td>
-<td>com.boilerplate.scripts.DeleteCanvasFromGlobalBoilerPlate@464bee09</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.DeleteTag@f5f2bb7</td></tr>
 <tr>
-<td title='com.boilerplate.scripts.DeleteCanvasFromLocalBoilerPlate.testDeleteCanvasFromLocalBoilerPlate()'><b>testDeleteCanvasFromLocalBoilerPlate</b><br>Test class: com.boilerplate.scripts.DeleteCanvasFromLocalBoilerPlate<br/>
-<a href="#Output-2096194236" onClick='toggleBox("Output-2096194236", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2096194236" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2096194236">
-******************************DeleteCanvasFromLocalBoilerPlate******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-clicked on project: Automation Project<br/>
-Step3:Clicked on canvas Use as Canvas<br/>
-clicked on dropdown button<br/>
-clicked on delete canvas link<br/>
-clicked yes on delete canvas confirm pop up<br/>
-Step5: Canvas deleted successfully<br/>
-******************************DeleteCanvasFromLocalBoilerPlate******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.EditPost.testEditPost()'><b>testEditPost</b><br>Test class: com.sampledotnetscripts.EditPost</td>
 <td></td>
-<td>22</td>
-<td>com.boilerplate.scripts.DeleteCanvasFromLocalBoilerPlate@754ba872</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.EditPost@50cbc42f</td></tr>
 <tr>
-<td title='com.boilerplate.scripts.DeleteGlobalBoilerPlate.testDeleteGlobalBoilerPlate()'><b>testDeleteGlobalBoilerPlate</b><br>Test class: com.boilerplate.scripts.DeleteGlobalBoilerPlate<br/>
-<a href="#Output-2096268257" onClick='toggleBox("Output-2096268257", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2096268257" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2096268257">
-******************************DeleteGlobalBoilerPlate******************************<br/>
-Step1:Logged in as Root Admin<br/>
-clicked on Global Boiler Plate link<br/>
-Step6:Opened Boiler Plate: Automation Boiler<br/>
-Step8:Boilerplate is deleted successfully<br/>
-******************************DeleteGlobalBoilerPlate******************************<br/>
-</div>
-</td>
+<td title='com.sampledotnetscripts.EditTag.testEditTag()'><b>testEditTag</b><br>Test class: com.sampledotnetscripts.EditTag</td>
 <td></td>
-<td>15</td>
-<td>com.boilerplate.scripts.DeleteGlobalBoilerPlate@f6c48ac</td></tr>
-<tr>
-<td title='com.boilerplate.scripts.DeleteLocalBoilerPlate.testDeleteLocalBoilerPlate()'><b>testDeleteLocalBoilerPlate</b><br>Test class: com.boilerplate.scripts.DeleteLocalBoilerPlate<br/>
-<a href="#Output-1441577726" onClick='toggleBox("Output-1441577726", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1441577726" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1441577726">
-******************************DeleteLocalBoilerPlate******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-clicked on Local Boiler Plate link<br/>
-Step6:Opened Boiler Plate: Automation Boiler<br/>
-Step8:Boilerplate is deleted successfully<br/>
-******************************DeleteLocalBoilerPlate******************************<br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.boilerplate.scripts.DeleteLocalBoilerPlate@146ba0ac</td></tr>
-<tr>
-<td title='com.compose.scripts.DragComponents.testDragComponents()'><b>testDragComponents</b><br>Test class: com.compose.scripts.DragComponents<br/>
-<a href="#Output-1831705084" onClick='toggleBox("Output-1831705084", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1831705084" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1831705084">
-******************************DragComponents******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-clicked on project: Automation Project<br/>
-Step3:Clicked on canvas Automation Canvas<br/>
-Step4:Clicked on Build Automation<br/>
-dragged cicd component into canvas<br/>
-clicked on provision button of jenkins software<br/>
-entered instance name for jenkins 2.7<br/>
-entered project name for jenkins 2.7<br/>
-Step10:Dragged cicd  component and selected Jenkins 2.7 software<br/>
-dragged buildtool component into canvas<br/>
-clicked on maven select button<br/>
-Step6:Dragged Build Tool Component and selected Maven<br/>
-zoom out is done<br/>
-zoom out is done<br/>
-dragged versioncontrol component into canvas<br/>
-clicked on connect button of github<br/>
-Step7:Dragged Version Control component and selected GitHub software<br/>
-dragged code quality component into canvas<br/>
-entered instance name for sonarqube<br/>
-Step8:Dragged Code Quality component and selected SonarQube6.0 software<br/>
-Step9:Clicked on Infrastructure Components<br/>
-dragged application server component into canvas<br/>
-clicked on provision button of tomcat<br/>
-entered instance name for tomcat software<br/>
-zoom in is done<br/>
-zoom in is done<br/>
-Step10:Dragged ApplicationServer component and selected Tomcat 9.0 software<br/>
-******************************DragComponents******************************<br/>
-</div>
-</td>
-<td></td>
-<td>67</td>
-<td>com.compose.scripts.DragComponents@548e7350</td></tr>
-<tr>
-<td title='com.provision.scripts.DragVMConnectwithUbuntu.testDragVMConnectUbuntuServer()'><b>testDragVMConnectUbuntuServer</b><br>Test class: com.provision.scripts.DragVMConnectwithUbuntu<br/>
-<a href="#Output-1360440329" onClick='toggleBox("Output-1360440329", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1360440329" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1360440329">
-******************************DragVMConnectwithUbuntu******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-clicked on project: Automation Project<br/>
-Step3:Clicked on canvas Automation Canvas<br/>
-Step4:Clicked on Provision view<br/>
-Step5:Dragged VM Connect with Ubuntu server into the canvas<br/>
-******************************DragVMConnectwithUbuntu******************************<br/>
-</div>
-</td>
-<td></td>
-<td>35</td>
-<td>com.provision.scripts.DragVMConnectwithUbuntu@4667ae56</td></tr>
-<tr>
-<td title='com.provision.scripts.InstallSoftwareintoVM.testInstallSoftwareintoVM()'><b>testInstallSoftwareintoVM</b><br>Test class: com.provision.scripts.InstallSoftwareintoVM<br/>
-<a href="#Output-1145391264" onClick='toggleBox("Output-1145391264", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1145391264" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1145391264">
-******************************InstallSoftwareintoVM******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-clicked on project: Automation Project<br/>
-Step3:Clicked on canvas Automation Canvas<br/>
-Step4:Clicked on Provision view<br/>
-Step6:Dragged Jenkins software into VM<br/>
-Step7:Dragged Tomcat software into VM<br/>
-Step8:Dragged Sonarqube software into VM<br/>
-******************************InstallSoftwareintoVM******************************<br/>
-</div>
-</td>
-<td></td>
-<td>54</td>
-<td>com.provision.scripts.InstallSoftwareintoVM@77cd7a0</td></tr>
-<tr>
-<td title='com.compose.scripts.IntegrateComponents.testIntegrateComponents()'><b>testIntegrateComponents</b><br>Test class: com.compose.scripts.IntegrateComponents<br/>
-<a href="#Output-923360749" onClick='toggleBox("Output-923360749", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-923360749" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-923360749">
-******************************IntegrateComponents******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-clicked on project: Automation Project<br/>
-Step3:Clicked on canvas Automation Canvas<br/>
-panning to left is done<br/>
-moved mouse on to jenkins<br/>
-moved mouse on to jenkins circle<br/>
-mousepress<br/>
-Step11:Integrated Tomcat and Jenkins<br/>
-Step13:Integrated Jenkins and Maven<br/>
-Step14:Integrated Jenkins and GitHub<br/>
-Step15:Integrated Jenkins and SonarQube<br/>
-******************************IntegrateComponents******************************<br/>
-</div>
-</td>
-<td></td>
-<td>36</td>
-<td>com.compose.scripts.IntegrateComponents@1a968a59</td></tr>
-<tr>
-<td title='com.rootadmin.scripts.PlatformAdminLoginWithInactiveStatus.testPlatformAdminLoginWithInactiveStatus()'><b>testPlatformAdminLoginWithInactiveStatus</b><br>Test class: com.rootadmin.scripts.PlatformAdminLoginWithInactiveStatus<br/>
-<a href="#Output-373544591" onClick='toggleBox("Output-373544591", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-373544591" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-373544591">
-******************************PlatformAdminLoginWithInactiveStatus******************************<br/>
-Step1:Logged in as Platform Admin<br/>
-Unable to login with Inactive status<br/>
-******************************PlatformAdminLoginWithInactiveStatus******************************<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.rootadmin.scripts.PlatformAdminLoginWithInactiveStatus@66a3ffec</td></tr>
-<tr>
-<td title='com.rootadmin.scripts.PlatformAdminLoginWithNewPassword.testPlatformAdminLoginWithNewPassword()'><b>testPlatformAdminLoginWithNewPassword</b><br>Test class: com.rootadmin.scripts.PlatformAdminLoginWithNewPassword<br/>
-<a href="#Output-1801021153" onClick='toggleBox("Output-1801021153", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1801021153" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1801021153">
-******************************PlatformAdminLoginWithNewPassword******************************<br/>
-Step1:Logged in as Platform Admin<br/>
-******************************PlatformAdminLoginWithNewPassword******************************<br/>
-</div>
-</td>
-<td></td>
-<td>6</td>
-<td>com.rootadmin.scripts.PlatformAdminLoginWithNewPassword@3bfdc050</td></tr>
-<tr>
-<td title='com.rootadmin.scripts.PlatformAdminLoginWithOldPassword.testPlatformAdminLoginWithOldPasword()'><b>testPlatformAdminLoginWithOldPasword</b><br>Test class: com.rootadmin.scripts.PlatformAdminLoginWithOldPassword<br/>
-<a href="#Output-156199931" onClick='toggleBox("Output-156199931", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-156199931" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-156199931">
-******************************PlatformAdminLoginWithOldPassword******************************<br/>
-Step1:Logged in as Platform Admin<br/>
-Unable to login with Old password<br/>
-******************************PlatformAdminLoginWithOldPassword******************************<br/>
-</div>
-</td>
-<td></td>
-<td>6</td>
-<td>com.rootadmin.scripts.PlatformAdminLoginWithOldPassword@42d80b78</td></tr>
-<tr>
-<td title='com.rootadmin.scripts.RootAdminLogin.testRootAdminLogin()'><b>testRootAdminLogin</b><br>Test class: com.rootadmin.scripts.RootAdminLogin<br/>
-<a href="#Output-841262455" onClick='toggleBox("Output-841262455", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-841262455" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-841262455">
-******************************RootAdminLogin******************************<br/>
-Step1:Logged in as Root Admin<br/>
-******************************RootAdminLogin******************************<br/>
-</div>
-</td>
-<td></td>
-<td>6</td>
-<td>com.rootadmin.scripts.RootAdminLogin@27efef64</td></tr>
-<tr>
-<td title='com.boilerplate.scripts.SavAsGlobalBoilerPlate.testSaveAsGlobalBoilerPlate()'><b>testSaveAsGlobalBoilerPlate</b><br>Test class: com.boilerplate.scripts.SavAsGlobalBoilerPlate<br/>
-<a href="#Output-345986913" onClick='toggleBox("Output-345986913", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-345986913" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-345986913">
-******************************SavAsGlobalBoilerPlate******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-clicked on project: Automation Project<br/>
-Step3:Clicked on canvas Automation Canvas<br/>
-clicked on dropdown button<br/>
-clicked on Save as Boiler Plate link<br/>
-entered boiler plate name<br/>
-entered boiler plate description<br/>
-selected global radiobutton<br/>
-clicked on submit button<br/>
-Step9:Saved the canvas as Global Boiler Plate: <br/>
-******************************SavAsGlobalBoilerPlate******************************<br/>
-</div>
-</td>
-<td></td>
-<td>26</td>
-<td>com.boilerplate.scripts.SavAsGlobalBoilerPlate@4dfa3a9d</td></tr>
-<tr>
-<td title='com.boilerplate.scripts.SaveasLocalBoilerPlate.testSaveasLocalBoilerPlate()'><b>testSaveasLocalBoilerPlate</b><br>Test class: com.boilerplate.scripts.SaveasLocalBoilerPlate<br/>
-<a href="#Output-1941598182" onClick='toggleBox("Output-1941598182", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1941598182" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1941598182">
-******************************SaveasLocalBoilerPlate******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-clicked on project: Automation Project<br/>
-Step3:Clicked on canvas Automation Canvas<br/>
-clicked on dropdown button<br/>
-clicked on Save as Boiler Plate link<br/>
-entered boiler plate name<br/>
-entered boiler plate description<br/>
-selected local radio button<br/>
-clicked on save button<br/>
-Step4:Saved the canvas as Local Boiler Plate: Automation Boiler<br/>
-clicked on Local Boiler Plate link<br/>
-******************************SaveasLocalBoilerPlate******************************<br/>
-</div>
-</td>
-<td></td>
-<td>26</td>
-<td>com.boilerplate.scripts.SaveasLocalBoilerPlate@204f30ec</td></tr>
-<tr>
-<td title='com.tenantadmin.scripts.TagUsertoProject.testTagUsertoProject()'><b>testTagUsertoProject</b><br>Test class: com.tenantadmin.scripts.TagUsertoProject<br/>
-<a href="#Output-778806426" onClick='toggleBox("Output-778806426", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-778806426" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-778806426">
-******************************TagUsertoProject******************************<br/>
-Step1:Logged in as Tenant Admin<br/>
-******************************TagUsertoProject******************************<br/>
-</div>
-</td>
-<td></td>
-<td>8</td>
-<td>com.tenantadmin.scripts.TagUsertoProject@42e26948</td></tr>
-<tr>
-<td title='com.tenantadmin.scripts.TenantAdminLogin.testTenantAdminLogin()'><b>testTenantAdminLogin</b><br>Test class: com.tenantadmin.scripts.TenantAdminLogin<br/>
-<a href="#Output-1688310330" onClick='toggleBox("Output-1688310330", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1688310330" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1688310330">
-******************************TenantAdminLogin******************************<br/>
-Step1:Logged in as Tenant Admin<br/>
-******************************TenantAdminLogin******************************<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.tenantadmin.scripts.TenantAdminLogin@6093dd95</td></tr>
-<tr>
-<td title='com.tenantadmin.scripts.TenantAdminLoginWhenTenantIsInactive.testTenantAdminLoginWhenTenantInactive()'><b>testTenantAdminLoginWhenTenantInactive</b><br>Test class: com.tenantadmin.scripts.TenantAdminLoginWhenTenantIsInactive<br/>
-<a href="#Output-1412656257" onClick='toggleBox("Output-1412656257", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1412656257" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1412656257">
-******************************TenantAdminLoginWhenTenantIsInactive******************************<br/>
-Step1:Logged in as Root Admin<br/>
-clicked on Tenant link<br/>
-selected the tenant<br/>
-clicked on edit button<br/>
-Changed Tenant to Inactive status<br/>
-Step1:Logged in as Tenant Admin<br/>
-Unable to login as Tenant Admin when Tenant is Inactive<br/>
-Step1:Logged in as Root Admin<br/>
-clicked on Tenant link<br/>
-clicked on edit button<br/>
-Changed Tenant to Active status<br/>
-******************************TenantAdminLoginWhenTenantIsInactive******************************<br/>
-</div>
-</td>
-<td></td>
-<td>35</td>
-<td>com.tenantadmin.scripts.TenantAdminLoginWhenTenantIsInactive@6d4b1c02</td></tr>
-<tr>
-<td title='com.tenantadmin.scripts.TenantAdminLoginWithInactiveStatus.testTenantAdminLoginWithInactiveStatus()'><b>testTenantAdminLoginWithInactiveStatus</b><br>Test class: com.tenantadmin.scripts.TenantAdminLoginWithInactiveStatus<br/>
-<a href="#Output-1513029997" onClick='toggleBox("Output-1513029997", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1513029997" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1513029997">
-******************************TenantAdminLoginWithInactiveStatus******************************<br/>
-Step1:Logged in as Tenant Admin<br/>
-Unable to login as Tenant Admin with Inactive status<br/>
-******************************TenantAdminLoginWithInactiveStatus******************************<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.tenantadmin.scripts.TenantAdminLoginWithInactiveStatus@6a41eaa2</td></tr>
-<tr>
-<td title='com.compose.scripts.UpdateCanvas.testUpdateCanvas()'><b>testUpdateCanvas</b><br>Test class: com.compose.scripts.UpdateCanvas<br/>
-<a href="#Output-1871678080" onClick='toggleBox("Output-1871678080", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1871678080" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1871678080">
-******************************UpdateCanvas******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-clicked on project: Automation Project<br/>
-clicked on edit button of canvas<br/>
-entered canvas name<br/>
-entered canvas description<br/>
-updated canvas details<br/>
-clicked on edit button<br/>
-reverted back the canvas name to Automation Canvas<br/>
-******************************UpdateCanvas******************************<br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>com.compose.scripts.UpdateCanvas@5442a311</td></tr>
-<tr>
-<td title='com.rootadmin.scripts.UpdatePlatformAdmin.testUpdatePlatformAdmin()'><b>testUpdatePlatformAdmin</b><br>Test class: com.rootadmin.scripts.UpdatePlatformAdmin<br/>
-<a href="#Output-767436045" onClick='toggleBox("Output-767436045", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-767436045" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-767436045">
-******************************UpdatePlatformAdmin******************************<br/>
-Step1:Logged in as Root Admin<br/>
-navigated to root admin platform admin page<br/>
-clicked on edit button of platform admin<br/>
-entered updated name of platform admin<br/>
-entered updated email id for platform admin<br/>
-clicked on update button<br/>
-reverted platform admin name back to Automation Root<br/>
-******************************UpdatePlatformAdmin******************************<br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>com.rootadmin.scripts.UpdatePlatformAdmin@47c62251</td></tr>
-<tr>
-<td title='com.tenantadmin.scripts.UpdateProject.testUpdateProject()'><b>testUpdateProject</b><br>Test class: com.tenantadmin.scripts.UpdateProject<br/>
-<a href="#Output-2050320909" onClick='toggleBox("Output-2050320909", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2050320909" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2050320909">
-******************************UpdateProject******************************<br/>
-Step1:Logged in as Tenant Admin<br/>
-selected project<br/>
-clicked on edit button<br/>
-entered project name<br/>
-entered project description<br/>
-updated project successfully<br/>
-selected updated project<br/>
-clicked on edit button<br/>
-Reverted project name back to Automation Project<br/>
-******************************UpdateProject******************************<br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>com.tenantadmin.scripts.UpdateProject@7d9d1a19</td></tr>
-<tr>
-<td title='com.rootadmin.scripts.UpdateTenant.testUpdateTenant()'><b>testUpdateTenant</b><br>Test class: com.rootadmin.scripts.UpdateTenant<br/>
-<a href="#Output-2075372030" onClick='toggleBox("Output-2075372030", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2075372030" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2075372030">
-******************************UpdateTenant******************************<br/>
-Step1:Logged in as Root Admin<br/>
-clicked on Tenant link<br/>
-selected the tenant<br/>
-clicked on edit button<br/>
-updated tenant name<br/>
-Updated tenant description<br/>
-entered number of users<br/>
-Updated Tenant successfully<br/>
-clicked on edit button<br/>
-Reverted name back to Automation Tenant<br/>
-******************************UpdateTenant******************************<br/>
-</div>
-</td>
-<td></td>
-<td>19</td>
-<td>com.rootadmin.scripts.UpdateTenant@5e3a8624</td></tr>
-<tr>
-<td title='com.rootadmin.scripts.UpdateTenantAdmin.testUpdateTenantAdmin()'><b>testUpdateTenantAdmin</b><br>Test class: com.rootadmin.scripts.UpdateTenantAdmin<br/>
-<a href="#Output-47918293" onClick='toggleBox("Output-47918293", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-47918293" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-47918293">
-******************************UpdateTenantAdmin******************************<br/>
-Step1:Logged in as Root Admin<br/>
-clicked on Tenant link<br/>
-selected the tenant<br/>
-clicked on edit button for Tenant Admin<br/>
-Updated Tenant Admin name<br/>
-updated email for tenant admin<br/>
-clicked on edit button for Tenant Admin<br/>
-Reverted Tenant Admin Name back to Automation Admin<br/>
-******************************UpdateTenantAdmin******************************<br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>com.rootadmin.scripts.UpdateTenantAdmin@6a4f787b</td></tr>
-<tr>
-<td title='com.boilerplate.scripts.UseAsCanvasFromGlobalBoilerPlate.testUseAsCanvasFromGlobalBoilerPlate()'><b>testUseAsCanvasFromGlobalBoilerPlate</b><br>Test class: com.boilerplate.scripts.UseAsCanvasFromGlobalBoilerPlate<br/>
-<a href="#Output-455726379" onClick='toggleBox("Output-455726379", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-455726379" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-455726379">
-******************************UseAsCanvasFromGlobalBoilerPlate******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-clicked on Global Boiler Plate link<br/>
-Step6:Opened Boiler Plate: Automation Boiler<br/>
-Step7:Created canvas from Boiler Plate<br/>
-******************************UseAsCanvasFromGlobalBoilerPlate******************************<br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>com.boilerplate.scripts.UseAsCanvasFromGlobalBoilerPlate@6eebc39e</td></tr>
-<tr>
-<td title='com.boilerplate.scripts.UseAsCanvasFromLocalBoilerPlate.testUseAsCanvasFromLocalBoilerPlate()'><b>testUseAsCanvasFromLocalBoilerPlate</b><br>Test class: com.boilerplate.scripts.UseAsCanvasFromLocalBoilerPlate<br/>
-<a href="#Output-822359325" onClick='toggleBox("Output-822359325", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-822359325" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-822359325">
-******************************UseAsCanvasFromLocalBoilerPlate******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-clicked on Local Boiler Plate link<br/>
-Step6:Opened Boiler Plate: Automation Boiler<br/>
-Step7:Created canvas from Boiler Plate<br/>
-******************************UseAsCanvasFromLocalBoilerPlate******************************<br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>com.boilerplate.scripts.UseAsCanvasFromLocalBoilerPlate@e25b2fe</td></tr>
-<tr>
-<td title='com.compose.scripts.UserLogin.testUserLogin()'><b>testUserLogin</b><br>Test class: com.compose.scripts.UserLogin<br/>
-<a href="#Output-168870325" onClick='toggleBox("Output-168870325", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-168870325" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-168870325">
-******************************UserLogin******************************<br/>
-Step1:Successfully logged in as tenant user<br/>
-******************************UserLogin******************************<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>com.compose.scripts.UserLogin@343f4d3d</td></tr>
-<tr>
-<td title='com.compose.scripts.UserLoginWhenTenantIsInactive.testUserLoginWhenTenantIsInactive()'><b>testUserLoginWhenTenantIsInactive</b><br>Test class: com.compose.scripts.UserLoginWhenTenantIsInactive<br/>
-<a href="#Output-936380963" onClick='toggleBox("Output-936380963", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-936380963" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-936380963">
-******************************UserLoginWhenTenantIsInactive******************************<br/>
-Step1:Logged in as Root Admin<br/>
-clicked on Tenant link<br/>
-selected the tenant<br/>
-clicked on edit button<br/>
-Changed Tenant to Inactive status<br/>
-Step1:Successfully logged in as tenant user<br/>
-Unable to login as User when Tenant is Inactive<br/>
-Step1:Logged in as Root Admin<br/>
-clicked on Tenant link<br/>
-clicked on edit button<br/>
-Changed Tenant to Active status<br/>
-******************************UserLoginWhenTenantIsInactive******************************<br/>
-</div>
-</td>
-<td></td>
-<td>33</td>
-<td>com.compose.scripts.UserLoginWhenTenantIsInactive@57baeedf</td></tr>
+<td>0</td>
+<td>com.sampledotnetscripts.EditTag@13b6d03</td></tr>
 </table><p>
 </body>
 </html>

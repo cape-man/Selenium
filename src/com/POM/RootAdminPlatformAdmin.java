@@ -1,5 +1,6 @@
 package com.POM;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -27,8 +28,11 @@ public class RootAdminPlatformAdmin
 	@FindBy(xpath="//input[@name='email']")
 	private WebElement emailfield;
 	
-	@FindBy(xpath="//input[@name='password']")
+	@FindBy(xpath="//input[@ng-model='updateAdminsCtrl.password']")
 	private WebElement passwordfield;
+	
+	@FindBy(xpath="//input[@name='confirmPassword']")
+	private WebElement confirmpasswordfield;
 	
 	@FindBy(xpath="//button[@type='submit']")
 	private WebElement createadminsubmitbutton;
@@ -57,7 +61,10 @@ public void createPlatformAdmin()
 	actions.moveToElement(platformlink).moveToElement(adminlink).click().build().perform();
 	System.out.println("navigated to root admin platform admin page");
 	Reporter.log("navigated to root admin platform admin page");
-	createadminbutton.click();
+	JavascriptExecutor jse=(JavascriptExecutor) driver;
+	jse.executeScript("window.scrollBy(0,250)", "");
+	Thread.sleep(2000);
+	/*createadminbutton.click();
 	System.out.println("clicked on Create Admin button");
 	Reporter.log("clicked on Create Admin button");
 	namefield.sendKeys("Automation Root");
@@ -72,10 +79,13 @@ public void createPlatformAdmin()
 	passwordfield.sendKeys("Autoroot12");
 	System.out.println("entered platform admin password");
 	Reporter.log("entered platform admin password");
+	confirmpasswordfield.sendKeys("Autoroot12");
+	System.out.println("entered platform admin confirm password");
+	Reporter.log("entered platform admin confirm password");
 	createadminsubmitbutton.click();
 	System.out.println("clicked on create platform admin submit button");
 	Reporter.log("clicked on create platform admin submit button");
-	Thread.sleep(2000);
+	Thread.sleep(2000);*/
 	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

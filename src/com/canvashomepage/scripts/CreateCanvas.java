@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.POM.CanvasHomePage;
+import com.POM.TenantUserProject;
 import com.POM.HomePage;
 import com.library.Generic;
 
@@ -18,12 +18,10 @@ public class CreateCanvas extends BaseTest
 public void testCreateCanvas() throws AWTException
 {
 	HomePage homepage=new HomePage(driver);
-	CanvasHomePage canvashomepage=new CanvasHomePage(driver);
+	TenantUserProject canvashomepage=new TenantUserProject(driver);
 	homepage.validLogIn();
 	canvashomepage.clickProject();
-	//WebDriverWait wait2=new WebDriverWait(driver, 120);
-	//wait2.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//button[@class='create-canvas-button btn btn-primary btn-md']"))));
+	canvashomepage.clickCreateCanvasButton();
 	canvashomepage.createCanvas();
-	//Assert.assertTrue(driver.findElement(By.xpath("//p[text()='"+Generic.readExcelData("CanvasName", 0, 0)+"']")).isDisplayed());
 }
 }

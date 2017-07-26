@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.boilerplate.scripts.SaveasLocalBoilerPlate">
+      <class name="com.sampledotnetscripts.EditPost">
         <methods>
+          <include name="testEditPost"/>
+          <include name="openExcel"/>
+          <include name="closeExcel"/>
           <include name="preCondition"/>
           <include name="postCondition"/>
-          <include name="testSaveasLocalBoilerPlate"/>
         </methods>
-      </class> <!-- com.boilerplate.scripts.SaveasLocalBoilerPlate -->
+      </class> <!-- com.sampledotnetscripts.EditPost -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

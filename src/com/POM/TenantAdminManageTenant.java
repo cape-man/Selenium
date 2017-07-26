@@ -48,6 +48,12 @@ public class TenantAdminManageTenant
 	@FindBy(xpath="//button[@ng-click='updateUserCtrl.validateCreateAdminForm(createAdminForm.$valid)']")
 	private WebElement createusersubmitbutton;
 	
+	@FindBy(xpath="(//td[text()='autouser']/..//button[@class='btn cstm-btn'])[1]")
+	private WebElement autousereditbutton;
+	
+	@FindBy(xpath="//button[@type='submit']")
+	private WebElement updateusersubmitbutton;
+	
 	private WebDriver driver;
 	
 public TenantAdminManageTenant(WebDriver driver)
@@ -149,4 +155,99 @@ public void createMultiUser()
 	}
 }
 
+
+public void convertUserToDesigner()
+{
+	try 
+	{
+	Actions actions=new Actions(driver);
+	actions.moveToElement(Managelink).moveToElement(tenantlink).click().build().perform();
+	System.out.println("navigated to Tenant Admin Manage Tenant screen");
+	Reporter.log("navigated to Tenant Admin Manage Tenant screen");
+	Thread.sleep(2000);
+	autousereditbutton.click();
+	System.out.println("clicked on the edit button of the user");
+	Reporter.log("clicked on the edit button of the user");
+	Thread.sleep(2000);
+	engineercheckbox.click();
+	System.out.println("unchecked engineer checkbox");
+	Reporter.log("unchecked engineer checkbox");
+	managercheckbox.click();
+	System.out.println("unchecked manager checkbox");
+	Reporter.log("unchecked manager checkbox");
+	updateusersubmitbutton.click();
+	System.out.println("clicked on create user submit button");
+	Reporter.log("clicked on create user submit button");
+	Thread.sleep(2000);
+	} 
+	catch (InterruptedException e) 
+	{
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+
+public void convertUserToEngineer()
+{
+	try 
+	{
+	Actions actions=new Actions(driver);
+	actions.moveToElement(Managelink).moveToElement(tenantlink).click().build().perform();
+	System.out.println("navigated to Tenant Admin Manage Tenant screen");
+	Reporter.log("navigated to Tenant Admin Manage Tenant screen");
+	Thread.sleep(2000);
+	autousereditbutton.click();
+	System.out.println("clicked on the edit button of the user");
+	Reporter.log("clicked on the edit button of the user");
+	Thread.sleep(2000);
+	designercheckbox.click();
+	System.out.println("unchecked designer checkbox");
+	Reporter.log("unchecked designer checkbox");
+	managercheckbox.click();
+	System.out.println("unchecked manager checkbox");
+	Reporter.log("unchecked manager checkbox");
+	updateusersubmitbutton.click();
+	System.out.println("clicked on create user submit button");
+	Reporter.log("clicked on create user submit button");
+	Thread.sleep(2000);
+	} 
+	catch (InterruptedException e) 
+	{
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+
+public void convertUserToManager()
+{
+	try 
+	{
+	Actions actions=new Actions(driver);
+	actions.moveToElement(Managelink).moveToElement(tenantlink).click().build().perform();
+	System.out.println("navigated to Tenant Admin Manage Tenant screen");
+	Reporter.log("navigated to Tenant Admin Manage Tenant screen");
+	Thread.sleep(2000);
+	autousereditbutton.click();
+	System.out.println("clicked on the edit button of the user");
+	Reporter.log("clicked on the edit button of the user");
+	Thread.sleep(2000);
+	designercheckbox.click();
+	System.out.println("unchecked designer checkbox");
+	Reporter.log("unchecked designer checkbox");
+	engineercheckbox.click();
+	System.out.println("unchecked engineer checkbox");
+	Reporter.log("unchecked engineer checkbox");
+	updateusersubmitbutton.click();
+	System.out.println("clicked on create user submit button");
+	Reporter.log("clicked on create user submit button");
+	Thread.sleep(2000);
+	} 
+	catch (InterruptedException e) 
+	{
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
 }

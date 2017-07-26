@@ -55,7 +55,7 @@ private WebElement vm;
 @FindBy(xpath="//div[contains(text(),'SonarQube 6.0')]")
 private WebElement sonarqubesoftware;
 
-@FindBy(xpath="//button[@ng-click='drawCanvasCtrl.installVirtualMachine()']")
+@FindBy(xpath="//button[@ng-click='defaultProvisionViewCtrl.provisionVirtualMachine()']")
 private WebElement provisionbutton;
 
 @FindBy(xpath="//button[text()='Yes']")
@@ -74,15 +74,18 @@ public Provision(WebDriver driver)
 
 public void clickProvisiontab()
 {
-	try {
+	try 
+	{
 	provisiontab.click();	
+	System.out.println("Step4:Clicked on Provision view");
+	Reporter.log("Step4:Clicked on Provision view");
 	Thread.sleep(1000);
-} catch (InterruptedException e) {
-	// TODO Auto-generated catch block
-	e.printStackTrace();
-}
-System.out.println("Step4:Clicked on Provision view");
-Reporter.log("Step4:Clicked on Provision view");
+	}
+	catch (InterruptedException e)
+	{
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 }
 
 public void clickVirtualMachineslink()
@@ -240,18 +243,17 @@ public void dragSonarqubetoVM() throws AWTException
 
 public void clickProvisionButton()
 {
-	provisionbutton.click();
+provisionbutton.click();
+System.out.println("clicked on provision button");
+Reporter.log("clicked on provision button");
+}
+
+
+public void clickConfirmProvisionButton()
+{
 	applychangesyesbutton.click();
-	try {
-		Thread.sleep(1000);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	provisionbutton.click();
-	applychangesyesbutton.click();
-	System.out.println("Step9:Clicked on Provision button");
-	Reporter.log("Step9:Clicked on Provision button");
+	System.out.println("clicked on confirm provision button");
+	Reporter.log("clicked on confirm provision button");
 }
 
 }

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import com.POM.BoilerPlate;
 import com.POM.Canvas;
-import com.POM.CanvasHomePage;
+import com.POM.TenantUserProject;
 import com.POM.HomePage;
 import com.canvashomepage.scripts.BaseTest;
 

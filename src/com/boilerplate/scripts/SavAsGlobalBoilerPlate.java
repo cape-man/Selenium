@@ -4,7 +4,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.POM.Canvas;
-import com.POM.CanvasHomePage;
+import com.POM.TenantUserProject;
 import com.POM.HomePage;
 import com.canvashomepage.scripts.BaseTest;
 
@@ -17,7 +17,7 @@ public void testSaveAsGlobalBoilerPlate()
 	Reporter.log("******************************SavAsGlobalBoilerPlate******************************");
 	HomePage homepage=new HomePage(driver);
 	homepage.validLogIn();
-	CanvasHomePage canvashomepage=new CanvasHomePage(driver);
+	TenantUserProject canvashomepage=new TenantUserProject(driver);
 	Canvas canvas=new Canvas(driver);
 	canvashomepage.clickProjectLink();
 	canvashomepage.clickProject();

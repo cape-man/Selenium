@@ -19,7 +19,7 @@ private WebElement saveasboilerplate;
 @FindBy(id="boilerplateName")
 private WebElement boilerplatename;
 
-@FindBy(xpath="//textarea[@placeholder='Enter description']")
+@FindBy(xpath="//textarea[@name='description']")
 private WebElement boilerplatedescription;
 
 @FindBy(xpath="(//input[@name='boilerplate-type'])[1]")
@@ -36,6 +36,18 @@ private WebElement deletebutton;
 
 @FindBy(xpath="//button[text()='Yes']")
 private WebElement deleteconfirmbutton;
+
+@FindBy(xpath="//button[@title='Activity']")
+private WebElement viewactivitybutton;
+
+@FindBy(xpath="//button[@ng-click='auditTrailCtrl.closeAuditTrailView()']")
+private WebElement viewactivityclosebutton;
+
+@FindBy(xpath="//button[@title='Logs']")
+private WebElement viewlogsbutton;
+
+@FindBy(xpath="//button[@ng-click='logHistoryCtrl.closeLogHistoryView()']")
+private WebElement viewlogclosedbutton;
 
 public Canvas(WebDriver driver)
 {
@@ -118,7 +130,7 @@ public void saveAsGlobalBoilerplate()
 	}
 }
 
-public void DeleteCanvas()
+public void deleteCanvas()
 {
 try
 {
@@ -126,6 +138,18 @@ try
 	System.out.println("clicked on delete canvas link");
 	Reporter.log("clicked on delete canvas link");
 	Thread.sleep(2000);
+}
+catch (InterruptedException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+}
+
+
+public void confirmDeleteCanvas()
+{
+try
+{
 	deleteconfirmbutton.click();
 	System.out.println("clicked yes on delete canvas confirm pop up");
 	Reporter.log("clicked yes on delete canvas confirm pop up");
@@ -139,4 +163,70 @@ catch (InterruptedException e) {
 }
 }
 
+
+public void clickViewActivity()
+{
+	try 
+	{
+	viewactivitybutton.click();
+	System.out.println("clicked on view activity");
+	Reporter.log("clicked on view activity");
+	Thread.sleep(2000);
+	} 
+	catch (InterruptedException e) 
+	{
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+
+public void closeViewActivity()
+{
+	try 
+	{
+	viewactivityclosebutton.click();
+	System.out.println("closed view activity");
+	Reporter.log("closed view activity");
+	Thread.sleep(2000);
+	} 
+	catch (InterruptedException e) 
+	{
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+
+public void clickViewLogs()
+{
+	try 
+	{
+	viewlogsbutton.click();
+	System.out.println("clicked on view logs");
+	Reporter.log("clicked on view logs");
+	Thread.sleep(2000);
+	} 
+	catch (InterruptedException e) 
+	{
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+public void closeViewLogs()
+{
+	try 
+	{
+	viewlogclosedbutton.click();
+	System.out.println("closed view logs");
+	Reporter.log("closed view logs");
+	Thread.sleep(2000);
+	} 
+	catch (InterruptedException e) 
+	{
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
 }

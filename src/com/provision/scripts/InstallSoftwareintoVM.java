@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.POM.BoilerPlate;
 import com.POM.Canvas;
-import com.POM.CanvasHomePage;
+import com.POM.TenantUserProject;
 import com.POM.Compose;
 import com.POM.HomePage;
 import com.POM.Provision;
@@ -22,7 +22,7 @@ public void testInstallSoftwareintoVM() throws AWTException
 	Reporter.log("******************************InstallSoftwareintoVM******************************");
 	HomePage homepage=new HomePage(driver);
 	homepage.validLogIn();
-	CanvasHomePage canvashomepage=new CanvasHomePage(driver);
+	TenantUserProject canvashomepage=new TenantUserProject(driver);
 	canvashomepage.clickProject();
 	canvashomepage.clickCanvas("Automation Canvas");
 	Provision provision=new Provision(driver);

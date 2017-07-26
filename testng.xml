@@ -3,49 +3,12 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-	  <class name="com.dataclear.scripts.DataClear"/>
-	  <class name="com.rootadmin.scripts.RootAdminLogin"/>
-	  <class name="com.rootadmin.scripts.CreatePlatformAdmin"/>
-	  <class name="com.rootadmin.scripts.UpdatePlatformAdmin"/>
-	  <class name="com.rootadmin.scripts.ChangePlatformAdminStatusToInactive"/>
-	  <class name="com.rootadmin.scripts.PlatformAdminLoginWithInactiveStatus"/>
-	  <class name="com.rootadmin.scripts.ChangePlatformAdminStatusToActive"/>
-	  <class name="com.rootadmin.scripts.ChangePasswordForPlatformAdmin"/>
-	  <class name="com.rootadmin.scripts.PlatformAdminLoginWithOldPassword"/>
-	  <class name="com.rootadmin.scripts.PlatformAdminLoginWithNewPassword"/>
-	  <class name="com.rootadmin.scripts.CreateTenant"/>
-	  <class name="com.rootadmin.scripts.UpdateTenant"/>
-	  <class name="com.rootadmin.scripts.ChangeTenantStatusToInactive"/>
-	  <class name="com.rootadmin.scripts.ChangeTenantStatusToActive"/>
-	  <class name="com.rootadmin.scripts.CreateTenantAdmin"/>
-	  <class name="com.rootadmin.scripts.UpdateTenantAdmin"/>
-	  <class name="com.rootadmin.scripts.ChangeTenantAdminStatusToInactive"/>
-	  <class name="com.tenantadmin.scripts.TenantAdminLoginWithInactiveStatus"/>
-	  <class name="com.rootadmin.scripts.ChangeTenantAdminStatusToActive"/>
-	  <class name="com.tenantadmin.scripts.TenantAdminLoginWhenTenantIsInactive"/>
-	  <class name="com.tenantadmin.scripts.TenantAdminLogin"/>
-	  <class name="com.tenantadmin.scripts.CreateUser"/>
-	  <class name="com.tenantadmin.scripts.CreateProject"/>
-	  <class name="com.tenantadmin.scripts.UpdateProject"/>
-	  <class name="com.tenantadmin.scripts.ChangeProjectStatusToInactive"/>
-	  <class name="com.tenantadmin.scripts.ChangeProjectStatusToActive"/>
-	  <class name="com.tenantadmin.scripts.TagUsertoProject"/>
-	  <class name="com.compose.scripts.UserLoginWhenTenantIsInactive"/>
-	  <class name="com.compose.scripts.UserLogin"/>
-	  <class name="com.compose.scripts.CreateCanvas"/>
-	  <class name="com.compose.scripts.UpdateCanvas"/>
-	  <class name="com.compose.scripts.DragComponents"/>
-	  <class name="com.compose.scripts.IntegrateComponents"/>
-	  <class name="com.provision.scripts.DragVMConnectwithUbuntu"/>
-	  <class name="com.provision.scripts.InstallSoftwareintoVM"/>
-	  <class name="com.boilerplate.scripts.SaveasLocalBoilerPlate"/>
-	  <class name="com.boilerplate.scripts.UseAsCanvasFromLocalBoilerPlate"/>
-	  <class name="com.boilerplate.scripts.DeleteCanvasFromLocalBoilerPlate"/>
-	  <class name="com.boilerplate.scripts.DeleteLocalBoilerPlate"/>
-	  <class name="com.boilerplate.scripts.SavAsGlobalBoilerPlate"/>
-	  <class name="com.boilerplate.scripts.UseAsCanvasFromGlobalBoilerPlate"/>
-	  <class name="com.boilerplate.scripts.DeleteCanvasFromGlobalBoilerPlate"/>
-	  <class name="com.boilerplate.scripts.DeleteGlobalBoilerPlate"/>
+	  <class name="com.sampledotnetscripts.CreatePost"/>
+	  <class name="com.sampledotnetscripts.EditPost"/>
+	  <class name="com.sampledotnetscripts.DeletePost"/>
+	  <class name="com.sampledotnetscripts.CreateTag"/>
+	  <class name="com.sampledotnetscripts.EditTag"/>
+	  <class name="com.sampledotnetscripts.DeleteTag"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

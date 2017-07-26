@@ -147,13 +147,17 @@ public class TenantAdminManageProject
 		Actions actions=new Actions(driver);
 		actions.moveToElement(Managelink).moveToElement(projectlink).click().build().perform();
 		System.out.println("navigated to project screen");
+		Reporter.log("navigated to project screen");
 		Thread.sleep(2000);
 		assignuserbutton.click();
 		System.out.println("clicked on assign user button");
+		Reporter.log("clicked on assign user button");
 		Actions actions1=new Actions(driver);
 		actions1.sendKeys(adduserfield, Generic.readExcelData("Credentials", 6, 1)).sendKeys(Keys.ENTER).click(assignusersubmitbutton).build().perform();
 		System.out.println("entered user name and clicked on Assign user submit button");
+		Reporter.log("entered user name and clicked on Assign user submit button");
 		System.out.println("step4: Assigned Automation User to Automation Project");
+		Reporter.log("step4: Assigned Automation User to Automation Project");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

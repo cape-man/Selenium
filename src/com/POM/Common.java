@@ -23,6 +23,7 @@ public Common(WebDriver driver)
 public void logOut()
 {
 	try {
+	Thread.sleep(6000);
 	profileimage.click();
 	System.out.println("clicked on profile image");
 	Thread.sleep(2000);

@@ -3,262 +3,38 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.compose.scripts.CreateCanvas">
+      <class name="com.sampledotnetscripts.CreateTag">
         <methods>
-          <include name="postCondition"/>
+          <include name="testCreateTag"/>
+        </methods>
+      </class> <!-- com.sampledotnetscripts.CreateTag -->
+      <class name="com.sampledotnetscripts.DeletePost">
+        <methods>
+          <include name="testDeletePost"/>
+        </methods>
+      </class> <!-- com.sampledotnetscripts.DeletePost -->
+      <class name="com.sampledotnetscripts.EditTag">
+        <methods>
+          <include name="testEditTag"/>
+        </methods>
+      </class> <!-- com.sampledotnetscripts.EditTag -->
+      <class name="com.sampledotnetscripts.EditPost">
+        <methods>
+          <include name="testEditPost"/>
+        </methods>
+      </class> <!-- com.sampledotnetscripts.EditPost -->
+      <class name="com.sampledotnetscripts.CreatePost">
+        <methods>
+          <include name="openExcel"/>
+          <include name="testCreatePost"/>
           <include name="preCondition"/>
         </methods>
-      </class> <!-- com.compose.scripts.CreateCanvas -->
-      <class name="com.rootadmin.scripts.PlatformAdminLoginWithInactiveStatus">
+      </class> <!-- com.sampledotnetscripts.CreatePost -->
+      <class name="com.sampledotnetscripts.DeleteTag">
         <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
+          <include name="testDeleteTag"/>
         </methods>
-      </class> <!-- com.rootadmin.scripts.PlatformAdminLoginWithInactiveStatus -->
-      <class name="com.rootadmin.scripts.ChangeTenantStatusToActive">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.ChangeTenantStatusToActive -->
-      <class name="com.boilerplate.scripts.SavAsGlobalBoilerPlate">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.boilerplate.scripts.SavAsGlobalBoilerPlate -->
-      <class name="com.boilerplate.scripts.SaveasLocalBoilerPlate">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.boilerplate.scripts.SaveasLocalBoilerPlate -->
-      <class name="com.compose.scripts.DragComponents">
-        <methods>
-          <include name="testDragComponents"/>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.compose.scripts.DragComponents -->
-      <class name="com.compose.scripts.IntegrateComponents">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-          <include name="testIntegrateComponents"/>
-        </methods>
-      </class> <!-- com.compose.scripts.IntegrateComponents -->
-      <class name="com.tenantadmin.scripts.TagUsertoProject">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.tenantadmin.scripts.TagUsertoProject -->
-      <class name="com.tenantadmin.scripts.ChangeProjectStatusToActive">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.tenantadmin.scripts.ChangeProjectStatusToActive -->
-      <class name="com.boilerplate.scripts.DeleteLocalBoilerPlate">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.boilerplate.scripts.DeleteLocalBoilerPlate -->
-      <class name="com.rootadmin.scripts.ChangeTenantAdminStatusToInactive">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.ChangeTenantAdminStatusToInactive -->
-      <class name="com.rootadmin.scripts.CreatePlatformAdmin">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.CreatePlatformAdmin -->
-      <class name="com.rootadmin.scripts.UpdateTenant">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.UpdateTenant -->
-      <class name="com.provision.scripts.InstallSoftwareintoVM">
-        <methods>
-          <include name="testInstallSoftwareintoVM"/>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.provision.scripts.InstallSoftwareintoVM -->
-      <class name="com.compose.scripts.UserLoginWhenTenantIsInactive">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.compose.scripts.UserLoginWhenTenantIsInactive -->
-      <class name="com.rootadmin.scripts.UpdateTenantAdmin">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.UpdateTenantAdmin -->
-      <class name="com.boilerplate.scripts.DeleteCanvasFromGlobalBoilerPlate">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.boilerplate.scripts.DeleteCanvasFromGlobalBoilerPlate -->
-      <class name="com.tenantadmin.scripts.CreateProject">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.tenantadmin.scripts.CreateProject -->
-      <class name="com.compose.scripts.UpdateCanvas">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.compose.scripts.UpdateCanvas -->
-      <class name="com.rootadmin.scripts.UpdatePlatformAdmin">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.UpdatePlatformAdmin -->
-      <class name="com.rootadmin.scripts.RootAdminLogin">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.RootAdminLogin -->
-      <class name="com.tenantadmin.scripts.CreateUser">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.tenantadmin.scripts.CreateUser -->
-      <class name="com.rootadmin.scripts.ChangePasswordForPlatformAdmin">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.ChangePasswordForPlatformAdmin -->
-      <class name="com.provision.scripts.DragVMConnectwithUbuntu">
-        <methods>
-          <include name="testDragVMConnectUbuntuServer"/>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.provision.scripts.DragVMConnectwithUbuntu -->
-      <class name="com.rootadmin.scripts.CreateTenantAdmin">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.CreateTenantAdmin -->
-      <class name="com.boilerplate.scripts.UseAsCanvasFromLocalBoilerPlate">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.boilerplate.scripts.UseAsCanvasFromLocalBoilerPlate -->
-      <class name="com.tenantadmin.scripts.ChangeProjectStatusToInactive">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.tenantadmin.scripts.ChangeProjectStatusToInactive -->
-      <class name="com.boilerplate.scripts.DeleteGlobalBoilerPlate">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.boilerplate.scripts.DeleteGlobalBoilerPlate -->
-      <class name="com.tenantadmin.scripts.TenantAdminLoginWhenTenantIsInactive">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.tenantadmin.scripts.TenantAdminLoginWhenTenantIsInactive -->
-      <class name="com.rootadmin.scripts.PlatformAdminLoginWithNewPassword">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.PlatformAdminLoginWithNewPassword -->
-      <class name="com.rootadmin.scripts.CreateTenant">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.CreateTenant -->
-      <class name="com.rootadmin.scripts.ChangePlatformAdminStatusToActive">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.ChangePlatformAdminStatusToActive -->
-      <class name="com.tenantadmin.scripts.TenantAdminLogin">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.tenantadmin.scripts.TenantAdminLogin -->
-      <class name="com.tenantadmin.scripts.TenantAdminLoginWithInactiveStatus">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.tenantadmin.scripts.TenantAdminLoginWithInactiveStatus -->
-      <class name="com.boilerplate.scripts.UseAsCanvasFromGlobalBoilerPlate">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.boilerplate.scripts.UseAsCanvasFromGlobalBoilerPlate -->
-      <class name="com.rootadmin.scripts.PlatformAdminLoginWithOldPassword">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.PlatformAdminLoginWithOldPassword -->
-      <class name="com.tenantadmin.scripts.UpdateProject">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.tenantadmin.scripts.UpdateProject -->
-      <class name="com.boilerplate.scripts.DeleteCanvasFromLocalBoilerPlate">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.boilerplate.scripts.DeleteCanvasFromLocalBoilerPlate -->
-      <class name="com.rootadmin.scripts.ChangePlatformAdminStatusToInactive">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.ChangePlatformAdminStatusToInactive -->
-      <class name="com.compose.scripts.UserLogin">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.compose.scripts.UserLogin -->
-      <class name="com.rootadmin.scripts.ChangeTenantAdminStatusToActive">
-        <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.ChangeTenantAdminStatusToActive -->
-      <class name="com.rootadmin.scripts.ChangeTenantStatusToInactive">
-        <methods>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.rootadmin.scripts.ChangeTenantStatusToInactive -->
+      </class> <!-- com.sampledotnetscripts.DeleteTag -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
