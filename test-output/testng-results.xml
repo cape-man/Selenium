@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[******************************UpdateProject******************************]]>
+    </line>
+    <line>
+      <![CDATA[Step1:Logged in as Tenant Admin]]>
+    </line>
+    <line>
+      <![CDATA[selected project]]>
+    </line>
+    <line>
+      <![CDATA[clicked on edit button]]>
+    </line>
+    <line>
+      <![CDATA[entered project name]]>
+    </line>
+    <line>
+      <![CDATA[entered project description]]>
+    </line>
+    <line>
+      <![CDATA[updated project successfully]]>
+    </line>
+    <line>
+      <![CDATA[clicked on edit button of updated project]]>
+    </line>
+    <line>
+      <![CDATA[Reverted project name back to Automation Project]]>
+    </line>
+    <line>
+      <![CDATA[******************************UpdateProject******************************]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="82297" started-at="2017-07-06T11:31:07Z" finished-at="2017-07-06T11:32:30Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="82297" started-at="2017-07-06T11:31:07Z" finished-at="2017-07-06T11:32:30Z">
+      <class name="com.tenantadmin.scripts.UpdateProject">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.tenantadmin.scripts.UpdateProject@1753acfe]" name="preCondition" is-config="true" duration-ms="62698" started-at="2017-07-06T17:01:07Z" finished-at="2017-07-06T17:02:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="testUpdateProject()[pri:0, instance:com.tenantadmin.scripts.UpdateProject@1753acfe]" name="testUpdateProject" duration-ms="17876" started-at="2017-07-06T17:02:10Z" finished-at="2017-07-06T17:02:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[******************************UpdateProject******************************]]>
+            </line>
+            <line>
+              <![CDATA[Step1:Logged in as Tenant Admin]]>
+            </line>
+            <line>
+              <![CDATA[selected project]]>
+            </line>
+            <line>
+              <![CDATA[clicked on edit button]]>
+            </line>
+            <line>
+              <![CDATA[entered project name]]>
+            </line>
+            <line>
+              <![CDATA[entered project description]]>
+            </line>
+            <line>
+              <![CDATA[updated project successfully]]>
+            </line>
+            <line>
+              <![CDATA[clicked on edit button of updated project]]>
+            </line>
+            <line>
+              <![CDATA[Reverted project name back to Automation Project]]>
+            </line>
+            <line>
+              <![CDATA[******************************UpdateProject******************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testUpdateProject -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.tenantadmin.scripts.UpdateProject@1753acfe]" name="postCondition" is-config="true" duration-ms="1687" started-at="2017-07-06T17:02:28Z" finished-at="2017-07-06T17:02:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.tenantadmin.scripts.UpdateProject -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
