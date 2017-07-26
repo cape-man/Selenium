@@ -22,6 +22,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.AfterMethod;
@@ -69,6 +70,8 @@ public void preCondition()
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		driver=new ChromeDriver(capabilities);
+		System.out.println("Chrome Browser is opened");
+		Reporter.log("Chrome Browser is opened");
 	}
 	else if(browser.equals("IE"))
 	{
@@ -85,6 +88,8 @@ public void preCondition()
 	
 	String url=Generic.getConfigData("URL");
 	driver.get(url);
+	System.out.println("url is opened");
+	Reporter.log("url is opened");
 	driver.navigate().refresh();
 }
 @AfterMethod
@@ -126,7 +131,8 @@ public void postCondition()
 	}*/
 	
 	driver.quit();
-	System.out.println("Browsers are closed");
+	System.out.println("Browser is closed");
+	Reporter.log("Browser is closed");
 }
 
 /*@BeforeTest
