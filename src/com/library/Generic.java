@@ -15,8 +15,7 @@ public static String getConfigData(String key)
 	String v="";
 	try
 	{
-		//FileInputStream fis=new FileInputStream("./config.properties");
-		FileInputStream fis=new FileInputStream("config.properties");
+		FileInputStream fis=new FileInputStream("./config.properties");
 		Properties p=new Properties();
 		p.load(fis);
 		v=p.getProperty(key);
@@ -33,8 +32,7 @@ public static String readExcelData(String sheet,int row,int cell)
 	String v="";
 	try
 	{
-		//FileInputStream fis=new FileInputStream("./xls/Book1.xlsx");
-		FileInputStream fis=new FileInputStream("xls/Book1.xlsx");
+		FileInputStream fis=new FileInputStream("./xls/Book1.xlsx");
 		Cell c = WorkbookFactory.create(fis).getSheet(sheet).getRow(row).getCell(cell);
 		if(c.getCellType()==1)
 		{
@@ -57,8 +55,7 @@ public static int getLastRowinExcel(String sheet)
 	int v=0;
 	try
 	{
-		//FileInputStream fis=new FileInputStream("./xls/Book1.xlsx");
-		FileInputStream fis=new FileInputStream("xls/Book1.xlsx");
+		FileInputStream fis=new FileInputStream("./xls/Book1.xlsx");
 		Sheet s = WorkbookFactory.create(fis).getSheet(sheet);
 		v=s.getLastRowNum();
 	}
