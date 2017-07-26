@@ -16,7 +16,7 @@ public static String getConfigData(String key)
 	try
 	{
 		//FileInputStream fis=new FileInputStream("./config.properties");
-		FileInputStream fis=new FileInputStream("cape-man/Selenium/config.properties");
+		FileInputStream fis=new FileInputStream("config.properties");
 		Properties p=new Properties();
 		p.load(fis);
 		v=p.getProperty(key);
