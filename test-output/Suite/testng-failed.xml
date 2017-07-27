@@ -12,8 +12,6 @@
       </class> <!-- com.sampledotnetscripts.DeleteTag -->
       <class name="com.sampledotnetscripts.CreatePost">
         <methods>
-          <include name="openExcel"/>
-          <include name="closeExcel"/>
           <include name="testCreatePost"/>
           <include name="preCondition"/>
           <include name="postCondition"/>

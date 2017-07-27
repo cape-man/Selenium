@@ -134,7 +134,7 @@ public void postCondition()
 	Reporter.log("Browser is closed");
 }
 
-/*@BeforeTest
+@BeforeTest
 public void openExcel()
 {
 	workbook=new HSSFWorkbook();
@@ -171,7 +171,8 @@ public void closeExcel()
 	
 	try 
 	{
-	FileOutputStream out=new FileOutputStream(new File("C:\\Users\\m1021092\\Desktop\\Result.xls"));
+	//FileOutputStream out=new FileOutputStream(new File("C:\\Users\\m1021092\\Desktop\\Result.xls"));
+	FileOutputStream out=new FileOutputStream(new File("C:\\TestReports\\TestResult.xls"));
 	workbook.write(out);
 	out.close();
 	}
@@ -180,6 +181,6 @@ public void closeExcel()
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-}*/
+}
 }
 

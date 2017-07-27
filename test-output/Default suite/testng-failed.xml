@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.sampledotnetscripts.EditPost">
+      <class name="com.dotnetscripts.DisplayAboutPage">
         <methods>
-          <include name="testEditPost"/>
+          <include name="testDisplayAboutPage"/>
           <include name="openExcel"/>
           <include name="closeExcel"/>
           <include name="preCondition"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- com.sampledotnetscripts.EditPost -->
+      </class> <!-- com.dotnetscripts.DisplayAboutPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
