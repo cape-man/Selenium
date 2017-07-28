@@ -172,7 +172,7 @@ public void closeExcel()
 	try 
 	{
 	//FileOutputStream out=new FileOutputStream(new File("C:\\Users\\m1021092\\Desktop\\Result.xls"));
-	FileOutputStream out=new FileOutputStream(new File("C:\\nginx-1.13.3\\html\\TestResult.xls"));
+	FileOutputStream out=new FileOutputStream(new File("C:\\Program Files (x86)\\Nginx\\html\\TestReports\\TestResult.xls"));
 	workbook.write(out);
 	out.close();
 	}
