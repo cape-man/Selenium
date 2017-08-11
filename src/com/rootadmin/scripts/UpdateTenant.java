@@ -21,6 +21,8 @@ public void testUpdateTenant()
 	RootAdminManageTenant rootadminmanagetenant=new RootAdminManageTenant(driver);
 	rootadminmanagetenant.updateTenant();
 	Assert.assertEquals(driver.findElement(By.xpath("//span[text()='Automation Tenant Updated']")).isDisplayed(), true);
+	System.out.println("Tenant is updated successfully");
+	Reporter.log("Tenant is updated successfully");
 	System.out.println("******************************UpdateTenant******************************");
 	Reporter.log("******************************UpdateTenant******************************");
 }

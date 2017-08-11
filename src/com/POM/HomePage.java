@@ -35,8 +35,10 @@ public class HomePage
 		try {
 		usernametextbox.sendKeys(Generic.readExcelData("Credentials", 6, 1));
 		System.out.println("entered username");
+		Reporter.log("entered username");
 		passwordtextbox.sendKeys(Generic.readExcelData("Credentials", 7, 1));
 		System.out.println("entered password");
+		Reporter.log("entered password");
 		loginbutton.click();
 		System.out.println("clicked on login button");
 		Reporter.log("Step1:Successfully logged in as tenant user");
@@ -69,28 +71,24 @@ public class HomePage
 		if(driver.getCurrentUrl().contains("login"))
 		{
 			System.out.println("loginpage appeared");
+			Reporter.log("loginpage appeared");
 		}
 		System.out.println(driver.getCurrentUrl());
+		Reporter.log(driver.getCurrentUrl());
 		usernametextbox.clear();
 		usernametextbox.sendKeys(Generic.readExcelData("Credentials", 3, 0));
 		System.out.println("entered username "+Generic.readExcelData("Credentials", 3, 0));
+		Reporter.log("entered username "+Generic.readExcelData("Credentials", 3, 0));
 		passwordtextbox.clear();
 		passwordtextbox.sendKeys(Generic.readExcelData("Credentials", 3, 1));
 		System.out.println("entered password "+Generic.readExcelData("Credentials", 3, 1));
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		System.out.println(loginbutton.isDisplayed());
-		System.out.println(loginbutton.isEnabled());
-		//loginbutton.click();
+		Reporter.log("entered password "+Generic.readExcelData("Credentials", 3, 1));
 		Actions actions=new Actions(driver);
 		actions.click(loginbutton).perform();
 		System.out.println("clicked on login button");
 		Reporter.log("Step1:Logged in as Root Admin");
 		System.out.println("Step1:Logged in as Root Admin");
+		Reporter.log("Step1:Logged in as Root Admin");
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
@@ -98,6 +96,7 @@ public class HomePage
 			e.printStackTrace();
 		}
 		System.out.println(driver.getCurrentUrl());
+		Reporter.log(driver.getCurrentUrl());
 	}
 	
 	public void tenantadminLogin()

@@ -20,7 +20,9 @@ public void testUpdatePlatformAdmin()
 	homepage.rootadminLogin();
 	RootAdminPlatformAdmin rootadminplatformadmin=new RootAdminPlatformAdmin(driver);
 	rootadminplatformadmin.editPlatformAdmin();
-	Assert.assertEquals(driver.findElement(By.xpath("//td[text()='autorootupdated@mindtree.com']")).isDisplayed(), true);
+	Assert.assertEquals(driver.findElement(By.xpath("//td[contains(text(),'autorootupdated@mindtree.com')]")).isDisplayed(), true);
+	System.out.println("updated platform admin successfully");
+	Reporter.log("updated platform admin successfully");
 	System.out.println("******************************UpdatePlatformAdmin******************************");
 	Reporter.log("******************************UpdatePlatformAdmin******************************");
 }

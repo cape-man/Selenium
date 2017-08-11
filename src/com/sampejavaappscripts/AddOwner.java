@@ -45,12 +45,16 @@ String status = "N.A";
 		status = "Pass";
 		System.out.println("owner is added successfully");
 		Reporter.log("owner is added successfully");
+		System.out.println("**************************************************");
+		Reporter.log("**************************************************");
 	}
 		else
 	{
 		status = "Failed";
 		System.out.println("owner is not added");
 		Reporter.log("owner is not added");
+		System.out.println("**************************************************");
+		Reporter.log("**************************************************");
 	}
 	long endtime = (new Date()).getTime();
 	long Duration = endtime-starttime;

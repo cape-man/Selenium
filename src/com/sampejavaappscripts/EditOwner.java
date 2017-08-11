@@ -44,12 +44,16 @@ public void testEditOwner() throws InterruptedException
 			status = "Pass";
 			System.out.println("owner details are updated successfully");
 			Reporter.log("owner details are updated successfully");
+			System.out.println("**************************************************");
+			Reporter.log("**************************************************");
 		}
 			else
 		{
 			status = "Failed";
 			System.out.println("owner details are not updated");
 			Reporter.log("owner details are not updated");
+			System.out.println("**************************************************");
+			Reporter.log("**************************************************");
 		}
 		long endtime = (new Date()).getTime();
 		long Duration = endtime-starttime;

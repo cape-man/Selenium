@@ -23,12 +23,16 @@ public void testDisplayContactPage()
 		status="Pass";
 		System.out.println("Footer is displayed");
 		Reporter.log("Footer is displayed");
+		System.out.println("**************************************************");
+		Reporter.log("**************************************************");
 	}
 	else
 	{
 		status="Failed";
 		System.out.println("Footer is not displayed");
 		Reporter.log("Footer is not displayed");
+		System.out.println("**************************************************");
+		Reporter.log("**************************************************");
 	}
 	long endtime = (new Date()).getTime();
 	long Duration = endtime-starttime;

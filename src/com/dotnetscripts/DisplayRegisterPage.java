@@ -23,12 +23,16 @@ public void testDisplayRegisterPage()
 		status="Pass";
 		System.out.println("register button is displayed");
 		Reporter.log("register button is displayed");
+		System.out.println("**************************************************");
+		Reporter.log("**************************************************");
 	}
 	else
 	{
 		status="Failed";
 		System.out.println("register button is not displayed");
 		Reporter.log("register button is not displayed");
+		System.out.println("**************************************************");
+		Reporter.log("**************************************************");
 	}
 	long endtime = (new Date()).getTime();
 	long Duration = endtime-starttime;

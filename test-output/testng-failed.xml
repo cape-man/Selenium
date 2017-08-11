@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
-      <class name="com.sampejavaappscripts.AddOwner">
+      <class name="com.dotnetscripts.DisplayLoginPage">
         <methods>
-          <include name="testAddOwner"/>
           <include name="openExcel"/>
+          <include name="closeExcel"/>
+          <include name="testDisplayLoginPage"/>
           <include name="preCondition"/>
+          <include name="postCondition"/>
         </methods>
-      </class> <!-- com.sampejavaappscripts.AddOwner -->
+      </class> <!-- com.dotnetscripts.DisplayLoginPage -->
+      <class name="com.dotnetscripts.DisplayAboutPage">
+        <methods>
+          <include name="testDisplayAboutPage"/>
+        </methods>
+      </class> <!-- com.dotnetscripts.DisplayAboutPage -->
+      <class name="com.dotnetscripts.DisplayRegisterPage">
+        <methods>
+          <include name="testDisplayRegisterPage"/>
+        </methods>
+      </class> <!-- com.dotnetscripts.DisplayRegisterPage -->
+      <class name="com.dotnetscripts.DisplayContactPage">
+        <methods>
+          <include name="testDisplayContactPage"/>
+        </methods>
+      </class> <!-- com.dotnetscripts.DisplayContactPage -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

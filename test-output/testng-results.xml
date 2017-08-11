@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[Chrome Browser is opened]]>
@@ -8,46 +8,67 @@
       <![CDATA[url is opened]]>
     </line>
     <line>
-      <![CDATA[clicked on find owners]]>
+      <![CDATA[clicked on login link]]>
     </line>
     <line>
-      <![CDATA[entered last name in search field]]>
+      <![CDATA[login button is displayed]]>
     </line>
     <line>
-      <![CDATA[clicked on find owner submit button]]>
+      <![CDATA[**************************************************]]>
     </line>
     <line>
-      <![CDATA[clicked on name link]]>
+      <![CDATA[clicked on register link]]>
     </line>
     <line>
-      <![CDATA[clicked on edit owner]]>
+      <![CDATA[register button is displayed]]>
     </line>
     <line>
-      <![CDATA[cleared the address field]]>
+      <![CDATA[**************************************************]]>
     </line>
     <line>
-      <![CDATA[entered updated address]]>
+      <![CDATA[clicked on contact link]]>
     </line>
     <line>
-      <![CDATA[clicked on update owner submit button]]>
+      <![CDATA[Footer is displayed]]>
     </line>
     <line>
-      <![CDATA[owner details are updated successfully]]>
+      <![CDATA[**************************************************]]>
+    </line>
+    <line>
+      <![CDATA[clicked on about link]]>
+    </line>
+    <line>
+      <![CDATA[Footer is not displayed]]>
     </line>
     <line>
       <![CDATA[Browser is closed]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11733" started-at="2017-07-28T05:23:22Z" finished-at="2017-07-28T05:23:34Z">
+  <suite name="Suite" duration-ms="68948" started-at="2017-08-11T06:45:48Z" finished-at="2017-08-11T06:46:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11733" started-at="2017-07-28T05:23:22Z" finished-at="2017-07-28T05:23:34Z">
-      <class name="com.sampejavaappscripts.EditOwner">
-        <test-method status="PASS" signature="openExcel()[pri:0, instance:com.sampejavaappscripts.EditOwner@2a2d45ba]" name="openExcel" is-config="true" duration-ms="130" started-at="2017-07-28T10:53:22Z" finished-at="2017-07-28T10:53:22Z">
+    <test name="Test" duration-ms="68948" started-at="2017-08-11T06:45:48Z" finished-at="2017-08-11T06:46:57Z">
+      <class name="com.dotnetscripts.DisplayContactPage">
+        <test-method status="PASS" signature="testDisplayContactPage()[pri:0, instance:com.dotnetscripts.DisplayContactPage@1b604f19]" name="testDisplayContactPage" duration-ms="391" started-at="2017-08-11T12:15:55Z" finished-at="2017-08-11T12:15:56Z">
+          <reporter-output>
+            <line>
+              <![CDATA[clicked on contact link]]>
+            </line>
+            <line>
+              <![CDATA[Footer is displayed]]>
+            </line>
+            <line>
+              <![CDATA[**************************************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDisplayContactPage -->
+      </class> <!-- com.dotnetscripts.DisplayContactPage -->
+      <class name="com.dotnetscripts.DisplayLoginPage">
+        <test-method status="PASS" signature="openExcel()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@482f8f11]" name="openExcel" is-config="true" duration-ms="125" started-at="2017-08-11T12:15:48Z" finished-at="2017-08-11T12:15:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openExcel -->
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.sampejavaappscripts.EditOwner@2a2d45ba]" name="preCondition" is-config="true" duration-ms="6259" started-at="2017-07-28T10:53:22Z" finished-at="2017-07-28T10:53:28Z">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@482f8f11]" name="preCondition" is-config="true" duration-ms="5777" started-at="2017-08-11T12:15:48Z" finished-at="2017-08-11T12:15:54Z">
           <reporter-output>
             <line>
               <![CDATA[Chrome Browser is opened]]>
@@ -57,49 +78,58 @@
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="testEditOwner()[pri:0, instance:com.sampejavaappscripts.EditOwner@2a2d45ba]" name="testEditOwner" duration-ms="3886" started-at="2017-07-28T10:53:28Z" finished-at="2017-07-28T10:53:32Z">
+        <test-method status="PASS" signature="testDisplayLoginPage()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@482f8f11]" name="testDisplayLoginPage" duration-ms="535" started-at="2017-08-11T12:15:54Z" finished-at="2017-08-11T12:15:55Z">
           <reporter-output>
             <line>
-              <![CDATA[clicked on find owners]]>
+              <![CDATA[clicked on login link]]>
             </line>
             <line>
-              <![CDATA[entered last name in search field]]>
+              <![CDATA[login button is displayed]]>
             </line>
             <line>
-              <![CDATA[clicked on find owner submit button]]>
-            </line>
-            <line>
-              <![CDATA[clicked on name link]]>
-            </line>
-            <line>
-              <![CDATA[clicked on edit owner]]>
-            </line>
-            <line>
-              <![CDATA[cleared the address field]]>
-            </line>
-            <line>
-              <![CDATA[entered updated address]]>
-            </line>
-            <line>
-              <![CDATA[clicked on update owner submit button]]>
-            </line>
-            <line>
-              <![CDATA[owner details are updated successfully]]>
+              <![CDATA[**************************************************]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testEditOwner -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.sampejavaappscripts.EditOwner@2a2d45ba]" name="postCondition" is-config="true" duration-ms="1340" started-at="2017-07-28T10:53:32Z" finished-at="2017-07-28T10:53:34Z">
+        </test-method> <!-- testDisplayLoginPage -->
+        <test-method status="PASS" signature="closeExcel()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@482f8f11]" name="closeExcel" is-config="true" duration-ms="48" started-at="2017-08-11T12:16:56Z" finished-at="2017-08-11T12:16:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeExcel -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@482f8f11]" name="postCondition" is-config="true" duration-ms="1219" started-at="2017-08-11T12:16:56Z" finished-at="2017-08-11T12:16:57Z">
           <reporter-output>
             <line>
               <![CDATA[Browser is closed]]>
             </line>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="closeExcel()[pri:0, instance:com.sampejavaappscripts.EditOwner@2a2d45ba]" name="closeExcel" is-config="true" duration-ms="78" started-at="2017-07-28T10:53:34Z" finished-at="2017-07-28T10:53:34Z">
+      </class> <!-- com.dotnetscripts.DisplayLoginPage -->
+      <class name="com.dotnetscripts.DisplayRegisterPage">
+        <test-method status="PASS" signature="testDisplayRegisterPage()[pri:0, instance:com.dotnetscripts.DisplayRegisterPage@1593948d]" name="testDisplayRegisterPage" duration-ms="391" started-at="2017-08-11T12:15:55Z" finished-at="2017-08-11T12:15:55Z">
           <reporter-output>
+            <line>
+              <![CDATA[clicked on register link]]>
+            </line>
+            <line>
+              <![CDATA[register button is displayed]]>
+            </line>
+            <line>
+              <![CDATA[**************************************************]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- closeExcel -->
-      </class> <!-- com.sampejavaappscripts.EditOwner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testDisplayRegisterPage -->
+      </class> <!-- com.dotnetscripts.DisplayRegisterPage -->
+      <class name="com.dotnetscripts.DisplayAboutPage">
+        <test-method status="PASS" signature="testDisplayAboutPage()[pri:0, instance:com.dotnetscripts.DisplayAboutPage@7823a2f9]" name="testDisplayAboutPage" duration-ms="60433" started-at="2017-08-11T12:15:56Z" finished-at="2017-08-11T12:16:56Z">
+          <reporter-output>
+            <line>
+              <![CDATA[clicked on about link]]>
+            </line>
+            <line>
+              <![CDATA[Footer is not displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDisplayAboutPage -->
+      </class> <!-- com.dotnetscripts.DisplayAboutPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -23,6 +23,8 @@ public void testCreateTenant()
 	RootAdminManageTenant rootadminmanagetenant=new RootAdminManageTenant(driver);
 	rootadminmanagetenant.createTenant();
 	Assert.assertEquals(driver.findElement(By.xpath("//span[text()='Automation Tenant']")).isDisplayed(), true);
+	System.out.println("Tenant is created successfully");
+	Reporter.log("Tenant is created successfully");
 	System.out.println("******************************CreateTenant******************************");
 	Reporter.log("******************************CreateTenant******************************");
 }

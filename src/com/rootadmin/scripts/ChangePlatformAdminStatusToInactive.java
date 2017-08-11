@@ -1,5 +1,7 @@
 package com.rootadmin.scripts;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -18,6 +20,9 @@ public void testChangePlatformAdminStatusToInactive()
 	homepage.rootadminLogin();
 	RootAdminPlatformAdmin rootadminplatformadmin=new RootAdminPlatformAdmin(driver);
 	rootadminplatformadmin.makePlatformAdminInactive();
+	Assert.assertEquals(driver.findElement(By.xpath("//span[text()='Inactive']")).isDisplayed(), true);
+	System.out.println("successfully changed the status to inactive");
+	Reporter.log("successfully changed the status to inactive");
 	System.out.println("******************************ChangePlatformAdminStatusToInactive******************************");
 	Reporter.log("******************************ChangePlatformAdminStatusToInactive******************************");
 }

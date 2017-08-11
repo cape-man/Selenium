@@ -9,6 +9,7 @@ import java.util.jar.JarException;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -27,14 +28,13 @@ import com.library.Generic;
 
 public class RootAdminManageTenant
 {
-@FindBy(xpath="//button[@class='btn btn-primary btn-md pull-right create-tanent-button']")
-//@FindBy(xpath="(//button[@type='button'])[1]")
+@FindBy(xpath="//button[@class='btn btn-primary btn-md pull-right create-tanent-button ']")
 private WebElement createtenantbutton;
 
-@FindBy(xpath="//input[@placeholder='Enter Tenant Name']")
+@FindBy(xpath="//input[@name='orgName']")
 private WebElement entertenantname;
 
-@FindBy(xpath="//textarea[@placeholder='Enter Tenant Description']")
+@FindBy(xpath="//textarea[@name='tenantDescription']")
 private WebElement entertenantdescription;
 
 @FindBy(xpath="//button[@ng-click='updateOrgCtrl.validateCreateOrganisationCanvas(createOrgForm.$valid)']")
@@ -95,13 +95,13 @@ private WebElement tenant;
 @FindBy(xpath="//span[text()='Automation Tenant Updated']")
 private WebElement updatedtenant;
 
-@FindBy(xpath="//span[text()='Automation Tenant']/../../../..//img[@role='button']")
+@FindBy(xpath="//span[text()='Automation Tenant']/../../../..//img[@class='pull-right edit-icon ng-scope']")
 private WebElement automationtenanteditbutton;
 
-@FindBy(xpath="//li[@class='project-container ng-scope disable-click']//img[@role='button']")
+@FindBy(xpath="//li[@class='project-container ng-scope disable-click']//img[@class='pull-right edit-icon ng-scope']")
 private WebElement inactiveautomationtenanteditbutton;
 
-@FindBy(xpath="//span[text()='Automation Tenant Updated']/../../../..//img[@role='button']")
+@FindBy(xpath="//span[text()='Automation Tenant Updated']/../../../..//img[@class='pull-right edit-icon ng-scope']")
 private WebElement automationtenantupdatededitbutton;
 
 @FindBy(xpath="//input[@name='maxUserLimit']")
@@ -110,7 +110,7 @@ private WebElement numberofusersfield;
 @FindBy(xpath="//button[@ng-click='updateOrgCtrl.validateUpdateOrganisationForm(updateOrgForm.$valid,updateOrgForm.tenantDescription.$dirty,updateOrgForm.maxUserLimit.$dirty)']")
 private WebElement updatetenantbutton;
 
-@FindBy(xpath="//input[@placeholder='Enter Organization Name']")
+@FindBy(xpath="(//input[@name='orgName'])[2]")
 private WebElement updatetenantnamefield;
 
 @FindBy(xpath="//span[@class='bootstrap-switch-label']")
@@ -247,6 +247,9 @@ public void updateTenant()
 	actions.moveToElement(Managelink).moveToElement(tenantlink).click().build().perform();
 	System.out.println("clicked on Tenant link");
 	Reporter.log("clicked on Tenant link");
+	Thread.sleep(2000);
+	JavascriptExecutor javascript = (JavascriptExecutor) driver;
+	javascript.executeScript("angular.element('.folder-list')[0].scrollTop=angular.element('.folder-list')[0].scrollHeight");
 	tenant.click();
 	System.out.println("selected the tenant");
 	Reporter.log("selected the tenant");
@@ -269,10 +272,7 @@ public void updateTenant()
 	System.out.println("clicked on Update Tenant button");
 	Reporter.log("Updated Tenant successfully");
 	Thread.sleep(4000);
-	//updatedtenant.click();
-	//System.out.println("selected the updated tenant");
-	//Reporter.log("selected the updated tenant");
-	//Thread.sleep(2000);
+	javascript.executeScript("angular.element('.folder-list')[0].scrollTop=angular.element('.folder-list')[0].scrollHeight");
 	automationtenantupdatededitbutton.click();
 	System.out.println("clicked on edit button");
 	Reporter.log("clicked on edit button");
@@ -282,6 +282,8 @@ public void updateTenant()
 	updatetenantbutton.click();
 	System.out.println("Reverted name back to Automation Tenant");
 	Reporter.log("Reverted name back to Automation Tenant");
+	Thread.sleep(2000);
+	javascript.executeScript("angular.element('.folder-list')[0].scrollTop=angular.element('.folder-list')[0].scrollHeight");
 	Thread.sleep(2000);
 	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
@@ -296,6 +298,9 @@ public void makeTenantInactive()
 		actions.moveToElement(Managelink).moveToElement(tenantlink).click().build().perform();
 		System.out.println("clicked on Tenant link");
 		Reporter.log("clicked on Tenant link");
+		Thread.sleep(2000);
+		JavascriptExecutor javascript = (JavascriptExecutor) driver;
+		javascript.executeScript("angular.element('.folder-list')[0].scrollTop=angular.element('.folder-list')[0].scrollHeight");
 		tenant.click();
 		System.out.println("selected the tenant");
 		Reporter.log("selected the tenant");
@@ -307,6 +312,10 @@ public void makeTenantInactive()
 		updatetenantbutton.click();
 		System.out.println("Changed Tenant to Inactive status");
 		Reporter.log("Changed Tenant to Inactive status");
+		Thread.sleep(2000);
+		javascript.executeScript("angular.element('.folder-list')[0].scrollTop=angular.element('.folder-list')[0].scrollHeight");
+		Thread.sleep(2000);
+		javascript.executeScript("angular.element('.folder-list')[0].scrollTop=angular.element('.folder-list')[0].scrollHeight");
 		Thread.sleep(4000);
 	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block

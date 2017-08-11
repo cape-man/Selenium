@@ -18,6 +18,8 @@ public void testChangePasswordForPlatformAdmin()
 	homepage.rootadminLogin();
 	RootAdminPlatformAdmin rootadminplatformadmin=new RootAdminPlatformAdmin(driver);
 	rootadminplatformadmin.changePasswordForPlatformAdmin();
+	System.out.println("successfully updated password for platform admin");
+	Reporter.log("successfully updated password for platform admin");
 	System.out.println("******************************ChangePasswordForPlatformAdmin******************************");
 	Reporter.log("******************************ChangePasswordForPlatformAdmin******************************");
 }

@@ -3,48 +3,30 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.sampledotnetscripts.DeleteTag">
+      <class name="com.dotnetscripts.DisplayLoginPage">
         <methods>
-          <include name="testDeleteTag"/>
-          <include name="postCondition"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.sampledotnetscripts.DeleteTag -->
-      <class name="com.sampledotnetscripts.CreatePost">
-        <methods>
-          <include name="testCreatePost"/>
+          <include name="openExcel"/>
+          <include name="closeExcel"/>
+          <include name="testDisplayLoginPage"/>
           <include name="preCondition"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- com.sampledotnetscripts.CreatePost -->
-      <class name="com.sampledotnetscripts.EditTag">
+      </class> <!-- com.dotnetscripts.DisplayLoginPage -->
+      <class name="com.dotnetscripts.DisplayAboutPage">
         <methods>
-          <include name="testEditTag"/>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
+          <include name="testDisplayAboutPage"/>
         </methods>
-      </class> <!-- com.sampledotnetscripts.EditTag -->
-      <class name="com.sampledotnetscripts.CreateTag">
+      </class> <!-- com.dotnetscripts.DisplayAboutPage -->
+      <class name="com.dotnetscripts.DisplayRegisterPage">
         <methods>
-          <include name="testCreateTag"/>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
+          <include name="testDisplayRegisterPage"/>
         </methods>
-      </class> <!-- com.sampledotnetscripts.CreateTag -->
-      <class name="com.sampledotnetscripts.EditPost">
+      </class> <!-- com.dotnetscripts.DisplayRegisterPage -->
+      <class name="com.dotnetscripts.DisplayContactPage">
         <methods>
-          <include name="testEditPost"/>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
+          <include name="testDisplayContactPage"/>
         </methods>
-      </class> <!-- com.sampledotnetscripts.EditPost -->
-      <class name="com.sampledotnetscripts.DeletePost">
-        <methods>
-          <include name="testDeletePost"/>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- com.sampledotnetscripts.DeletePost -->
+      </class> <!-- com.dotnetscripts.DisplayContactPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

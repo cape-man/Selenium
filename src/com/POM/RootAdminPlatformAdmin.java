@@ -1,6 +1,12 @@
 package com.POM;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -26,7 +32,10 @@ public class RootAdminPlatformAdmin
 	private WebElement useridfield;
 	
 	@FindBy(xpath="//input[@name='email']")
-	private WebElement emailfield;
+	private WebElement createemailfield;
+	
+	@FindBy(xpath="//input[@name='updateEmail']")
+	private WebElement updateemailfield;
 	
 	@FindBy(xpath="//input[@ng-model='updateAdminsCtrl.password']")
 	private WebElement passwordfield;
@@ -37,11 +46,17 @@ public class RootAdminPlatformAdmin
 	@FindBy(xpath="//button[@type='submit']")
 	private WebElement createadminsubmitbutton;
 	
-	@FindBy(xpath="//td[text()='autoroot']/..//button[@class='cstm-btn']")
+	@FindBy(xpath="(//td[contains(text(),'autoroot@mindtree.com')]/..//button[@class='cstm-btn'])[1]")
 	private WebElement autorooteditbutton;
+	
+	@FindBy(xpath="(//td[contains(text(),'autorootupdated@mindtree.com')]/..//button[@class='cstm-btn'])[1]")
+	private WebElement updatedautorooteditbutton;
 	
 	@FindBy(xpath="//span[@class='bootstrap-switch-label']")
 	private WebElement statusbutton;
+	
+	@FindBy(xpath="//input[@placeholder='Search Admin']")
+	private WebElement platformadminsearchbox;
 	
 	private WebDriver driver;
 	
@@ -61,10 +76,8 @@ public void createPlatformAdmin()
 	actions.moveToElement(platformlink).moveToElement(adminlink).click().build().perform();
 	System.out.println("navigated to root admin platform admin page");
 	Reporter.log("navigated to root admin platform admin page");
-	JavascriptExecutor jse=(JavascriptExecutor) driver;
-	jse.executeScript("window.scrollBy(0,250)", "");
 	Thread.sleep(2000);
-	/*createadminbutton.click();
+	createadminbutton.click();
 	System.out.println("clicked on Create Admin button");
 	Reporter.log("clicked on Create Admin button");
 	namefield.sendKeys("Automation Root");
@@ -73,7 +86,7 @@ public void createPlatformAdmin()
 	useridfield.sendKeys("autoroot");
 	System.out.println("entered platform admin userid");
 	Reporter.log("entered platform admin userid");
-	emailfield.sendKeys("autoroot@mindtree.com");
+	createemailfield.sendKeys("autoroot@mindtree.com");
 	System.out.println("entered platform admin email id");
 	Reporter.log("entered platform admin email id");
 	passwordfield.sendKeys("Autoroot12");
@@ -85,7 +98,9 @@ public void createPlatformAdmin()
 	createadminsubmitbutton.click();
 	System.out.println("clicked on create platform admin submit button");
 	Reporter.log("clicked on create platform admin submit button");
-	Thread.sleep(2000);*/
+	Thread.sleep(6000);
+	platformadminsearchbox.sendKeys("autoroot");
+	Thread.sleep(2000);
 	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
@@ -100,6 +115,8 @@ public void editPlatformAdmin()
 	actions.moveToElement(platformlink).moveToElement(adminlink).click().build().perform();
 	System.out.println("navigated to root admin platform admin page");
 	Reporter.log("navigated to root admin platform admin page");
+	Thread.sleep(8000);
+	platformadminsearchbox.sendKeys("autoroot");
 	autorooteditbutton.click();
 	System.out.println("clicked on edit button of platform admin");
 	Reporter.log("clicked on edit button of platform admin");
@@ -107,15 +124,15 @@ public void editPlatformAdmin()
 	namefield.sendKeys("Automation Root Updated");
 	System.out.println("entered updated name of platform admin");
 	Reporter.log("entered updated name of platform admin");
-	emailfield.clear();
-	emailfield.sendKeys("autorootupdated@mindtree.com");
+	updateemailfield.clear();
+	updateemailfield.sendKeys("autorootupdated@mindtree.com");
 	System.out.println("entered updated email id for platform admin");
 	Reporter.log("entered updated email id for platform admin");
 	createadminsubmitbutton.click();
 	System.out.println("clicked on update button");
 	Reporter.log("clicked on update button");
 	Thread.sleep(4000);
-	autorooteditbutton.click();
+	updatedautorooteditbutton.click();
 	namefield.clear();
 	namefield.sendKeys("Automation Root");
 	createadminsubmitbutton.click();
@@ -134,9 +151,11 @@ public void makePlatformAdminInactive()
 	try {
 	Actions actions=new Actions(driver);
 	actions.moveToElement(platformlink).moveToElement(adminlink).click().build().perform();
-	System.out.println("navidated to root admin platform admin page");
-	Reporter.log("navidated to root admin platform admin page");
-	autorooteditbutton.click();
+	System.out.println("navigated to root admin platform admin page");
+	Reporter.log("navigated to root admin platform admin page");
+	Thread.sleep(10000);
+	platformadminsearchbox.sendKeys("autoroot");
+	updatedautorooteditbutton.click();
 	System.out.println("clicked on edit button of platform admin");
 	Reporter.log("clicked on edit button of platform admin");
 	Thread.sleep(2000);
@@ -160,9 +179,11 @@ public void makePlatformAdminActive()
 	try {
 	Actions actions=new Actions(driver);
 	actions.moveToElement(platformlink).moveToElement(adminlink).click().build().perform();
-	System.out.println("navidated to root admin platform admin page");
-	Reporter.log("navidated to root admin platform admin page");
-	autorooteditbutton.click();
+	System.out.println("navigated to root admin platform admin page");
+	Reporter.log("navigated to root admin platform admin page");
+	Thread.sleep(10000);
+	platformadminsearchbox.sendKeys("autoroot");
+	updatedautorooteditbutton.click();
 	System.out.println("clicked on edit button of platform admin");
 	Reporter.log("clicked on edit button of platform admin");
 	Thread.sleep(2000);
@@ -188,13 +209,18 @@ public void changePasswordForPlatformAdmin()
 	actions.moveToElement(platformlink).moveToElement(adminlink).click().build().perform();
 	System.out.println("navidated to root admin platform admin page");
 	Reporter.log("navidated to root admin platform admin page");
-	autorooteditbutton.click();
+	Thread.sleep(10000);
+	platformadminsearchbox.sendKeys("autoroot");
+	updatedautorooteditbutton.click();
 	System.out.println("clicked on edit button of platform admin");
 	Reporter.log("clicked on edit button of platform admin");
 	Thread.sleep(2000);
 	passwordfield.sendKeys("Autoroot123");
 	System.out.println("entered new password for platform admin");
 	Reporter.log("entered new password for platform admin");
+	confirmpasswordfield.sendKeys("Autoroot123");
+	System.out.println("entered confirm password for platform admin");
+	Reporter.log("entered confirm password for platform admin");
 	createadminsubmitbutton.click();
 	System.out.println("clicked on Update button");
 	Reporter.log("clicked on Update button");

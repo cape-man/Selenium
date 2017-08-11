@@ -34,6 +34,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
+import com.POM.Common;
 import com.google.common.collect.ImmutableMap;
 import com.library.Generic;
 import com.sun.jna.platform.win32.OaIdl.DATE;
@@ -42,18 +43,12 @@ public class BaseTest
 {
 	HSSFWorkbook workbook;
 	HSSFSheet sheet;
-	//public LinkedHashMap<String, Object[]> testresult;
 	public  static Map<String, Object[]> testresult;
-	public WebDriver driver;
+	public static WebDriver driver;
 	
-@BeforeMethod
+@BeforeTest
 public void preCondition()
 {
-	 /*workbook=new HSSFWorkbook();
-	 sheet = workbook.createSheet("Result");
-	testresult = new LinkedHashMap<String, Object[]>();
-	testresult.put("1",new Object[]{"Test Case ID","Test Case Name","Test Case Description","Status","Timestamp","Priority","Module","Environment","Version","Duration","Browser","Operating System","Tester"});*/
-	
 	String browser=Generic.getConfigData("BROWSER");
 	if(browser.equals("GC"))
 	{
@@ -91,48 +86,20 @@ public void preCondition()
 	Reporter.log("url is opened");
 	driver.navigate().refresh();
 }
-@AfterMethod
+@AfterTest
 public void postCondition()
-{
-	/*Set<String> keyset = testresult.keySet();
-	int rownum=0;
-	for(String key:keyset)
-	{
-		HSSFRow row = sheet.createRow(rownum++);
-		Object[] arr = testresult.get(key);
-		int cellnum=0;
-		for(Object ar:arr)
-		{
-			HSSFCell cell = row.createCell(cellnum++);
-			if(ar instanceof Date)
-				cell.setCellValue((Date)ar);
-			else if(ar instanceof Boolean)
-				cell.setCellValue((Boolean)ar);
-			else if(ar instanceof String)
-				cell.setCellValue((String)ar);
-			else if (ar instanceof Double)
-				cell.setCellValue((Double)ar);
-			else if (ar instanceof Long)
-				cell.setCellValue((Long)ar);
-		}
-	}
-	
-	try 
-	{
-	FileOutputStream out=new FileOutputStream(new File("C:\\Users\\m1021092\\Desktop\\Result.xls"));
-	workbook.write(out);
-	out.close();
-	}
-	catch (IOException e)
-	{
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}*/
-	
+{	
 	driver.quit();
 	System.out.println("Browser is closed");
 	Reporter.log("Browser is closed");
 }
+
+/*@AfterMethod
+public void logOut()
+{
+	Common common=new Common(driver);
+	common.logOut();
+}*/
 
 @BeforeTest
 public void openExcel()
@@ -171,8 +138,8 @@ public void closeExcel()
 	
 	try 
 	{
-	//FileOutputStream out=new FileOutputStream(new File("C:\\Users\\m1021092\\Desktop\\Result.xls"));
 	FileOutputStream out=new FileOutputStream(new File("C:\\Program Files (x86)\\Nginx\\html\\TestReports\\TestResult.xls"));
+	//FileOutputStream out=new FileOutputStream(new File("./xls/TestResult.xls"));
 	workbook.write(out);
 	out.close();
 	}

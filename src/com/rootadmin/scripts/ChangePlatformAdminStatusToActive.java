@@ -1,5 +1,7 @@
 package com.rootadmin.scripts;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -18,6 +20,9 @@ public class ChangePlatformAdminStatusToActive extends BaseTest
 		homepage.rootadminLogin();
 		RootAdminPlatformAdmin rootadminplatformadmin=new RootAdminPlatformAdmin(driver);
 		rootadminplatformadmin.makePlatformAdminActive();
+		Assert.assertEquals(driver.findElement(By.xpath("//span[text()='Active']")).isDisplayed(), true);
+		System.out.println("successfully changed platform admin status to active");
+		Reporter.log("successfully changed platform admin status to active");
 		System.out.println("******************************ChangePlatformAdminStatusToActive******************************");
 		Reporter.log("******************************ChangePlatformAdminStatusToActive******************************");
 	}

@@ -23,12 +23,16 @@ public void testDisplayLoginPage()
 		status="Pass";
 		System.out.println("login button is displayed");
 		Reporter.log("login button is displayed");
+		System.out.println("**************************************************");
+		Reporter.log("**************************************************");
 	}
 	else
 	{
 		status="Failed";
 		System.out.println("login button is not displayed");
 		Reporter.log("login button is not displayed");
+		System.out.println("**************************************************");
+		Reporter.log("**************************************************");
 	}
 	long endtime = (new Date()).getTime();
 	long Duration = endtime-starttime;
