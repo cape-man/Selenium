@@ -20,7 +20,9 @@ public void testUpdateTenantAdmin()
 	homepage.rootadminLogin();
 	RootAdminManageTenant rootadminmanagetenant=new RootAdminManageTenant(driver);
 	rootadminmanagetenant.updateTenantAdmin();
-	Assert.assertEquals(driver.findElement(By.xpath("//td[text()='updatedemail@mindtree.com']")).isDisplayed(), true);
+	Assert.assertEquals(driver.findElement(By.xpath("//td[contains(text(),'updatedemail@mindtree.com')]")).isDisplayed(), true);
+	System.out.println("Tenant Admin is updated successfully");
+	Reporter.log("Tenant Admin is updated successfully");
 	System.out.println("******************************UpdateTenantAdmin******************************");
 	Reporter.log("******************************UpdateTenantAdmin******************************");
 }

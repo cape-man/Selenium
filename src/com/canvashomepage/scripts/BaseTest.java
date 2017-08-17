@@ -53,7 +53,7 @@ public void preCondition()
 	if(browser.equals("GC"))
 	{
 		//System.setProperty("webdriver.chrome.driver", "./exe/chromedriver");
-		System.setProperty("webdriver.chrome.driver", "./exe/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:/CAPE/DotNet-Project/exe/chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 
 		Map<String, Object> prefs = new HashMap<String, Object>();
@@ -78,7 +78,7 @@ public void preCondition()
 	}
 	
 	driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	
 	String url=Generic.getConfigData("URL");
 	driver.get(url);

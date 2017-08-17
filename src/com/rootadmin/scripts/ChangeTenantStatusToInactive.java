@@ -24,7 +24,7 @@ public void testChangeTenantStatusToInactive()
 	RootAdminManageTenant rootadminmanagetenant=new RootAdminManageTenant(driver);
 	rootadminmanagetenant.makeTenantInactive();
 	Assert.assertEquals(driver.findElement(By.xpath("//span[text()='Automation Tenant']")).isDisplayed(), false);
-	System.out.println("Chnaged Tenant status to Inactive successfully");
+	System.out.println("Changed Tenant status to Inactive successfully");
 	Reporter.log("Chnaged Tenant status to Inactive successfully");
 	System.out.println("******************************ChangeTenantStatusToInactive******************************");
 	Reporter.log("******************************ChangeTenantStatusToInactive******************************");

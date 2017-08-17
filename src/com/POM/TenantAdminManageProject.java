@@ -19,7 +19,7 @@ public class TenantAdminManageProject
 		@FindBy(xpath="//a[text()='Project']")
 		private WebElement projectlink;
 		
-		@FindBy(xpath="//button[@class='create-tanent-button btn btn-md pull-right btn-search-size']")
+		@FindBy(xpath="//button[@class='create-tanent-button btn  btn-md pull-right btn-search-size']")
 		private WebElement createprojectbutton;
 
 		@FindBy(name="projectName")
@@ -37,10 +37,10 @@ public class TenantAdminManageProject
 		@FindBy(xpath="//button[@ng-click='createProjectCtrl.validateUpdateProjectForm(createProjectForm.$valid,createProjectForm.projectDescription.$dirty)']")
 		private WebElement updateprojectsubmitbutton;
 		
-		@FindBy(xpath="//button[text()='Assign User']")
+		@FindBy(xpath="//button[contains(text(),'Assign User')]")
 		private WebElement assignuserbutton;
 
-		@FindBy(xpath="//input[@placeholder='Add a User']")
+		@FindBy(xpath="//input[@placeholder='Add a tag']")
 		private WebElement adduserfield;
 		
 		@FindBy(xpath="//button[@ng-click='assignUserCtrl.validateAssignUserForm()']")
@@ -52,13 +52,13 @@ public class TenantAdminManageProject
 		@FindBy(xpath="//span[text()='Automation Project Updated']")
 		private WebElement updatedproject;
 		
-		@FindBy(xpath="//span[text()='Automation Project']/../../..//img[@role='button']")
+		@FindBy(xpath="//span[text()='Automation Project']/../../..//img[@class='pull-right edit-icon']")
 		private WebElement projecteditbutton;
 		
-		@FindBy(xpath="//div[@title='Automation Project']/../..//img[@role='button']")
+		@FindBy(xpath="//div[@title='Automation Project']/../..//img[@class='pull-right edit-icon']")
 		private WebElement inactiveprojecteditbutton;
 		
-		@FindBy(xpath="//span[text()='Automation Project Updated']/../../..//img[@role='button']")
+		@FindBy(xpath="//span[text()='Automation Project Updated']/../../..//img[@class='pull-right edit-icon']")
 		private WebElement updatedprojecteditbutton;
 		
 		@FindBy(xpath="//span[@class='bootstrap-switch-label']")
@@ -152,8 +152,12 @@ public class TenantAdminManageProject
 		assignuserbutton.click();
 		System.out.println("clicked on assign user button");
 		Reporter.log("clicked on assign user button");
+		adduserfield.click();
+		Thread.sleep(2000);
 		Actions actions1=new Actions(driver);
-		actions1.sendKeys(adduserfield, Generic.readExcelData("Credentials", 6, 1)).sendKeys(Keys.ENTER).click(assignusersubmitbutton).build().perform();
+		actions1.sendKeys(adduserfield, Generic.readExcelData("Credentials", 6, 1)).sendKeys(Keys.ENTER).build().perform();
+		Thread.sleep(2000);
+		assignusersubmitbutton.click();
 		System.out.println("entered user name and clicked on Assign user submit button");
 		Reporter.log("entered user name and clicked on Assign user submit button");
 		System.out.println("step4: Assigned Automation User to Automation Project");

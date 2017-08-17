@@ -18,9 +18,9 @@ public void testTagUsertoProject()
 	HomePage homepage=new HomePage(driver);
 	homepage.tenantadminLogin();
 	TenantAdminManageProject tenantadminmanageproject=new TenantAdminManageProject(driver);
-	//tenantadminmanagetenant.createUser();
-	//tenantadminmanageproject.createProject();
 	tenantadminmanageproject.tagUsertoProject();
+	System.out.println("Successfully tagged user to project");
+	Reporter.log("Successfully tagged user to project");
 	System.out.println("******************************TagUsertoProject******************************");
 	Reporter.log("******************************TagUsertoProject******************************");
 }

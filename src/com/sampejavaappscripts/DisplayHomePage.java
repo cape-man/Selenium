@@ -21,7 +21,7 @@ public void testDisplayHomePage()
 	driver.findElement(By.xpath("//span[text()='Home']")).click();
 	System.out.println("clicked on home page link");
 	Reporter.log("clicked on home page link");
-	if(driver.findElement(By.xpath("//h2[text()='Welcome']")).isDisplayed())
+	if(driver.findElement(By.xpath("//h2[text()='Welcom']")).isDisplayed())
 	{
 		status="Pass";
 		System.out.println("welcome is displayed in homepage");

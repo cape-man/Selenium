@@ -21,7 +21,6 @@ public void testDisplayErrorPage()
 	driver.findElement(By.xpath("//span[text()='Error']")).click();
 	System.out.println("clicked on error page link");
 	Reporter.log("clicked on error page link");
-	String status="N.A";
 	if(driver.findElement(By.xpath("//h2[text()='Something happene...']")).isDisplayed())
 	{
 		status="Pass";

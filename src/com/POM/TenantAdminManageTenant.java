@@ -18,19 +18,19 @@ public class TenantAdminManageTenant
 	@FindBy(xpath="//a[text()='Tenant']")
 	private WebElement tenantlink;
 	
-	@FindBy(xpath="//button[@class='add-user-button btn btn-primary btn-sm btn-search-size']")
+	@FindBy(xpath="//button[@class='add-user-button  btn btn-primary btn-sm btn-search-size']")
 	private WebElement createuserbutton;
 
 	@FindBy(name="adminName")
 	private WebElement enteradminnamefield;
 
-	@FindBy(xpath="//input[@placeholder='Enter User Id']")
+	@FindBy(xpath="//input[@name='username']")
 	private WebElement useridfield;
 
 	@FindBy(name="email")
 	private WebElement enteremailfield;
 	
-	@FindBy(name="password")
+	@FindBy(xpath="(//input[@name='password'])[2]")
 	private WebElement passwordfield;
 	
 	@FindBy(xpath="//input[@name='confirmPassword']")

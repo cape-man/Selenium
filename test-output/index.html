@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\CAPE\cape-automation\testng.xml</span>
+                    <span>D:\CAPE\DotNet-Project\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.dotnetscripts.DisplayAboutPage" hash-for-method="testDisplayAboutPage">testDisplayAboutPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,11 +114,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.dotnetscripts.DisplayAboutPage" hash-for-method="testDisplayAboutPage">testDisplayAboutPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.dotnetscripts.DisplayContactPage" hash-for-method="testDisplayContactPage">testDisplayContactPage</a> <!-- method navigator-link -->
@@ -132,24 +141,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.dotnetscripts.DisplayLoginPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDisplayLoginPage">
-                  </a> <!-- testDisplayLoginPage -->
-                  <span class="method-name">testDisplayLoginPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.dotnetscripts.DisplayAboutPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -158,6 +152,26 @@
                   <a name="testDisplayAboutPage">
                   </a> <!-- testDisplayAboutPage -->
                   <span class="method-name">testDisplayAboutPage</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.dotnetscripts.DisplayAboutPage.testDisplayAboutPage(DisplayAboutPage.java:24)
+	at com.dotnetscripts.CallTestNG.main(CallTestNG.java:17)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.dotnetscripts.DisplayContactPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDisplayContactPage">
+                  </a> <!-- testDisplayContactPage -->
+                  <span class="method-name">testDisplayContactPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,14 +194,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.dotnetscripts.DisplayContactPage</span>
+              <span class="class-name">com.dotnetscripts.DisplayLoginPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testDisplayContactPage">
-                  </a> <!-- testDisplayContactPage -->
-                  <span class="method-name">testDisplayContactPage</span>
+                  <a name="testDisplayLoginPage">
+                  </a> <!-- testDisplayLoginPage -->
+                  <span class="method-name">testDisplayLoginPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,7 +209,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\CAPE\cape-automation\testng.xml</span>
+            <span class="header-content">D:\CAPE\DotNet-Project\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -251,24 +265,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testDisplayAboutPage')
 data.setCell(0, 2, 'com.dotnetscripts.DisplayAboutPage')
-data.setCell(0, 3, 60433);
+data.setCell(0, 3, 2401);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testDisplayLoginPage')
 data.setCell(1, 2, 'com.dotnetscripts.DisplayLoginPage')
-data.setCell(1, 3, 535);
+data.setCell(1, 3, 487);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testDisplayRegisterPage')
 data.setCell(2, 2, 'com.dotnetscripts.DisplayRegisterPage')
-data.setCell(2, 3, 391);
+data.setCell(2, 3, 452);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testDisplayContactPage')
 data.setCell(3, 2, 'com.dotnetscripts.DisplayContactPage')
-data.setCell(3, 3, 391);
+data.setCell(3, 3, 365);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -296,18 +310,17 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">testDisplayAboutPage</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">clicked on about link</span>
-                <span class="reporter-method-output">Footer is not displayed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">testDisplayContactPage</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">clicked on contact link</span>
                 <span class="reporter-method-output">Footer is displayed</span>
                 <span class="reporter-method-output">**************************************************</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDisplayAboutPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">clicked on about link</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -318,7 +331,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.dotnetscripts.DisplayAboutPage</span>
+              <span class="ignored-class-name">com.dotnetscripts.DisplayContactPage</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">openExcel</span>
                 <br/>
@@ -344,7 +357,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.dotnetscripts.DisplayContactPage</span>
+              <span class="ignored-class-name">com.dotnetscripts.DisplayAboutPage</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">openExcel</span>
                 <br/>
@@ -371,43 +384,45 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">preCondition</span>
-                <span class="method-start">125 ms</span>
+                <span class="method-start">219 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testDisplayLoginPage</span>
-                <span class="method-start">5919 ms</span>
+                <span class="method-start">5724 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dotnetscripts.DisplayRegisterPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testDisplayRegisterPage</span>
-                <span class="method-start">6459 ms</span>
+                <span class="method-start">6212 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dotnetscripts.DisplayContactPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testDisplayContactPage</span>
-                <span class="method-start">6852 ms</span>
+                <span class="method-start">6665 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dotnetscripts.DisplayAboutPage</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testDisplayAboutPage</span>
-                <span class="method-start">7245 ms</span>
+                <span class="method-start">7031 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dotnetscripts.DisplayLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeExcel</span>
-                <span class="method-start">67681 ms</span>
+                <span class="method-start">9432 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">67729 ms</span>
+                <span class="method-start">9468 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

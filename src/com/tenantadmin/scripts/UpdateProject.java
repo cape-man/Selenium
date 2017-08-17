@@ -21,6 +21,8 @@ public void testUpdateProject()
 	TenantAdminManageProject tenantadminmanageproject=new TenantAdminManageProject(driver);
 	tenantadminmanageproject.updateProject();
 	Assert.assertEquals(driver.findElement(By.xpath("//span[text()='Automation Project Updated']")).isDisplayed(), true);
+	System.out.println("Project is updated successfully");
+	Reporter.log("Project is updated successfully");
 	System.out.println("******************************UpdateProject******************************");
 	Reporter.log("******************************UpdateProject******************************");
 }

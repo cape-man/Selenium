@@ -20,9 +20,10 @@ public void testCreateTenantAdmin()
 	HomePage homepage=new HomePage(driver);
 	homepage.rootadminLogin();
 	RootAdminManageTenant rootadminmanagetenant=new RootAdminManageTenant(driver);
-	//rootadminmanagetenant.createTenant();
 	rootadminmanagetenant.createTenantAdmin();
-	Assert.assertEquals(driver.findElement(By.xpath("//td[text()='autoadmin']")).isDisplayed(), true);
+	Assert.assertEquals(driver.findElement(By.xpath("//td[contains(text(),'autoadmin@mindtree.com')]")).isDisplayed(), true);
+	System.out.println("Tenant Admin is created successfully");
+	Reporter.log("Tenant Admin is created successfully");
 	System.out.println("******************************CreateTenantAdmin******************************");
 	Reporter.log("******************************CreateTenantAdmin******************************");
 }

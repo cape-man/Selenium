@@ -15,7 +15,7 @@ public static String getConfigData(String key)
 	String v="";
 	try
 	{
-		FileInputStream fis=new FileInputStream("./config.properties");
+		FileInputStream fis=new FileInputStream("D:/CAPE/DotNet-Project/config.properties");
 		Properties p=new Properties();
 		p.load(fis);
 		v=p.getProperty(key);

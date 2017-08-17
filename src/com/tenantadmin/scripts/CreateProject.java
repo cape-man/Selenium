@@ -21,9 +21,10 @@ public void testCreateProject()
 	HomePage homepage=new HomePage(driver);
 	homepage.tenantadminLogin();
 	TenantAdminManageProject tenantadminmanageproject=new TenantAdminManageProject(driver);
-	//tenantadminmanagetenant.createUser();
 	tenantadminmanageproject.createProject();
 	Assert.assertEquals(driver.findElement(By.xpath("//span[text()='Automation Project']")).isDisplayed(), true);
+	System.out.println("Project is created successfully");
+	Reporter.log("Project is created successfully");
 	System.out.println("******************************CreateProject******************************");
 	Reporter.log("******************************CreateProject******************************");
 }

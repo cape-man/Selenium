@@ -33,9 +33,11 @@ public class HomePage
 	public void validLogIn()
 	{
 		try {
+		usernametextbox.clear();
 		usernametextbox.sendKeys(Generic.readExcelData("Credentials", 6, 1));
 		System.out.println("entered username");
 		Reporter.log("entered username");
+		passwordtextbox.clear();
 		passwordtextbox.sendKeys(Generic.readExcelData("Credentials", 7, 1));
 		System.out.println("entered password");
 		Reporter.log("entered password");
@@ -102,12 +104,14 @@ public class HomePage
 	public void tenantadminLogin()
 	{
 		try {
+		usernametextbox.clear();
 		usernametextbox.sendKeys(Generic.readExcelData("Credentials", 4, 1));
+		passwordtextbox.clear();
 		passwordtextbox.sendKeys(Generic.readExcelData("Credentials", 5, 1));
 		loginbutton.click();
 		Reporter.log("Step1:Logged in as Tenant Admin");
 		System.out.println("Step1:Logged in as Tenant Admin");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -134,7 +138,9 @@ public class HomePage
 	public void platformAdminLoginWithNewPassword()
 	{
 		try {
+		usernametextbox.clear();
 		usernametextbox.sendKeys("autoroot");
+		passwordtextbox.clear();
 		passwordtextbox.sendKeys("Autoroot123");
 		loginbutton.click();
 		Reporter.log("Step1:Logged in as Platform Admin");

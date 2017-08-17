@@ -1,5 +1,7 @@
 package com.tenantadmin.scripts;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -18,6 +20,9 @@ public void testChangeProjectStatusToActive()
 	homepage.tenantadminLogin();
 	TenantAdminManageProject tenantadminmanageproject=new TenantAdminManageProject(driver);
 	tenantadminmanageproject.makeProjectActive();
+	Assert.assertEquals(driver.findElement(By.xpath("//span[text()='Automation Project']")).isDisplayed(), true);
+	System.out.println("Successfully changed project status to Active");
+	Reporter.log("Successfully changed project status to Active");
 	System.out.println("******************************ChangeProjectStatusToActive******************************");
 	Reporter.log("******************************ChangeProjectStatusToActive******************************");
 }

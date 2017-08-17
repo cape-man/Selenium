@@ -7,7 +7,6 @@
         <methods>
           <include name="openExcel"/>
           <include name="closeExcel"/>
-          <include name="testDisplayLoginPage"/>
           <include name="preCondition"/>
           <include name="postCondition"/>
         </methods>
@@ -17,16 +16,6 @@
           <include name="testDisplayAboutPage"/>
         </methods>
       </class> <!-- com.dotnetscripts.DisplayAboutPage -->
-      <class name="com.dotnetscripts.DisplayRegisterPage">
-        <methods>
-          <include name="testDisplayRegisterPage"/>
-        </methods>
-      </class> <!-- com.dotnetscripts.DisplayRegisterPage -->
-      <class name="com.dotnetscripts.DisplayContactPage">
-        <methods>
-          <include name="testDisplayContactPage"/>
-        </methods>
-      </class> <!-- com.dotnetscripts.DisplayContactPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

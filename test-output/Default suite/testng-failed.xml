@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.rootadmin.scripts.ChangeTenantStatusToInactive">
+      <class name="com.tenantadmin.scripts.TagUsertoProject">
         <methods>
-          <include name="testChangeTenantStatusToInactive"/>
+          <include name="testTagUsertoProject"/>
           <include name="preCondition"/>
-          <include name="postCondition"/>
+          <include name="logOut"/>
         </methods>
-      </class> <!-- com.rootadmin.scripts.ChangeTenantStatusToInactive -->
+      </class> <!-- com.tenantadmin.scripts.TagUsertoProject -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

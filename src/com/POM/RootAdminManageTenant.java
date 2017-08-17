@@ -40,19 +40,19 @@ private WebElement entertenantdescription;
 @FindBy(xpath="//button[@ng-click='updateOrgCtrl.validateCreateOrganisationCanvas(createOrgForm.$valid)']")
 private WebElement tenantsubmitbutton;
 
-@FindBy(xpath="//button[@class='add-user-button btn btn-primary btn-sm btn-search-size']")
+@FindBy(xpath="//button[@class='add-user-button  btn btn-primary btn-sm btn-search-size']")
 private WebElement createuserbutton;
 
 @FindBy(name="adminName")
 private WebElement enteradminnamefield;
 
-@FindBy(xpath="//input[@placeholder='Enter User Id']")
+@FindBy(xpath="//input[@name='username']")
 private WebElement useridfield;
 
 @FindBy(name="email")
 private WebElement enteremailfield;
 
-@FindBy(name="password")
+@FindBy(xpath="(//input[@name='password'])[2]")
 private WebElement passwordfield;
 
 @FindBy(xpath="//input[@name='confirmPassword']")
@@ -202,6 +202,9 @@ public void createTenantAdmin()
 	actions.moveToElement(Managelink).moveToElement(tenantlink).click().build().perform();
 	System.out.println("clicked on Tenant link");
 	Reporter.log("clicked on Tenant link");
+	Thread.sleep(2000);
+	JavascriptExecutor javascript = (JavascriptExecutor) driver;
+	javascript.executeScript("angular.element('.folder-list')[0].scrollTop=angular.element('.folder-list')[0].scrollHeight");
 	tenant.click();
 	System.out.println("selected the tenant");
 	Reporter.log("selected the tenant");
@@ -330,9 +333,9 @@ public void makeTenantActive()
 		actions.moveToElement(Managelink).moveToElement(tenantlink).click().build().perform();
 		System.out.println("clicked on Tenant link");
 		Reporter.log("clicked on Tenant link");
-		//tenant.click();
-		//System.out.println("selected the tenant");
-		//Reporter.log("selected the tenant");
+		Thread.sleep(2000);
+		JavascriptExecutor javascript = (JavascriptExecutor) driver;
+		javascript.executeScript("angular.element('.folder-list')[0].scrollTop=angular.element('.folder-list')[0].scrollHeight");
 		inactiveautomationtenanteditbutton.click();
 		System.out.println("clicked on edit button");
 		Reporter.log("clicked on edit button");
@@ -341,6 +344,8 @@ public void makeTenantActive()
 		updatetenantbutton.click();
 		System.out.println("Changed Tenant to Active status");
 		Reporter.log("Changed Tenant to Active status");
+		Thread.sleep(2000);
+		javascript.executeScript("angular.element('.folder-list')[0].scrollTop=angular.element('.folder-list')[0].scrollHeight");
 		Thread.sleep(4000);
 	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
@@ -356,6 +361,9 @@ public void updateTenantAdmin()
 	actions.moveToElement(Managelink).moveToElement(tenantlink).click().build().perform();
 	System.out.println("clicked on Tenant link");
 	Reporter.log("clicked on Tenant link");
+	Thread.sleep(2000);
+	JavascriptExecutor javascript = (JavascriptExecutor) driver;
+	javascript.executeScript("angular.element('.folder-list')[0].scrollTop=angular.element('.folder-list')[0].scrollHeight");
 	tenant.click();
 	System.out.println("selected the tenant");
 	Reporter.log("selected the tenant");
@@ -395,6 +403,9 @@ public void makeTenantAdminInactive()
 	actions.moveToElement(Managelink).moveToElement(tenantlink).click().build().perform();
 	System.out.println("clicked on Tenant link");
 	Reporter.log("clicked on Tenant link");
+	Thread.sleep(2000);
+	JavascriptExecutor javascript = (JavascriptExecutor) driver;
+	javascript.executeScript("angular.element('.folder-list')[0].scrollTop=angular.element('.folder-list')[0].scrollHeight");
 	tenant.click();
 	System.out.println("selected the tenant");
 	Reporter.log("selected the tenant");
@@ -421,6 +432,11 @@ public void makeTenantAdminActive()
 	actions.moveToElement(Managelink).moveToElement(tenantlink).click().build().perform();
 	System.out.println("clicked on Tenant link");
 	Reporter.log("clicked on Tenant link");
+	Thread.sleep(2000);
+	JavascriptExecutor javascript = (JavascriptExecutor) driver;
+	javascript.executeScript("angular.element('.folder-list')[0].scrollTop=angular.element('.folder-list')[0].scrollHeight");
+	Thread.sleep(2000);
+	javascript.executeScript("angular.element('.folder-list')[0].scrollTop=angular.element('.folder-list')[0].scrollHeight");
 	tenant.click();
 	System.out.println("selected the tenant");
 	Reporter.log("selected the tenant");
