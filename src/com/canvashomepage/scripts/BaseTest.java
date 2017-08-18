@@ -50,10 +50,10 @@ public class BaseTest
 public void preCondition()
 {
 	String browser=Generic.getConfigData("BROWSER");
-	if(browser.equals("GC"))
-	{
+	//if(browser.equals("GC"))
+	//{
 		//System.setProperty("webdriver.chrome.driver", "./exe/chromedriver");
-		System.setProperty("webdriver.chrome.driver", "D:/CAPE/DotNet-Project/exe/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 
 		Map<String, Object> prefs = new HashMap<String, Object>();
@@ -66,8 +66,8 @@ public void preCondition()
 		driver=new ChromeDriver(capabilities);
 		System.out.println("Chrome Browser is opened");
 		Reporter.log("Chrome Browser is opened");
-	}
-	else if(browser.equals("IE"))
+	//}
+/*	else if(browser.equals("IE"))
 	{
 		System.setProperty("webdriver.ie.driver", "./exe/IEDriverServer.exe");
 		driver=new InternetExplorerDriver();
@@ -75,13 +75,13 @@ public void preCondition()
 	else
 	{
 		driver=new FirefoxDriver();
-	}
+	}*/
 	
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	
 	String url=Generic.getConfigData("URL");
-	driver.get(url);
+	driver.get("http://cape-vsts.southeastasia.cloudapp.azure.com/");
 	System.out.println("url is opened");
 	Reporter.log("url is opened");
 	driver.navigate().refresh();

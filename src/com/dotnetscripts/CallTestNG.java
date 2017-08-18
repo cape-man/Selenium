@@ -1,18 +1,18 @@
 package com.dotnetscripts;
 
-import com.Jira.TestApi;
-
 import java.util.ArrayList;
+import java.util.Base64;
 
 import org.testng.TestNG;
 
 import com.Jira.CreateIssue;
+import com.Jira.TestApi;
 
 public class CallTestNG {
 	public static void main(String[] args) {
 		TestNG testng = new TestNG();
 		ArrayList<String> suite = new ArrayList<String>();
-		suite.add("D:\\CAPE\\DotNet-Project\\testng.xml");
+		suite.add("testng.xml");
 		testng.setTestSuites(suite);
 		testng.run();
 		CreateIssue createIssue = new CreateIssue();
@@ -23,7 +23,10 @@ public class CallTestNG {
 		String jiraUsername = args[4];
 		String jiraPassword = args[5];
 		String jiraIssueType = args[6];
-		String jiraProjectName = args[7];
+		String jiraEncodedProjectName = args[7];
+		Base64.Decoder decoder = Base64.getDecoder();
+		byte[] decodedByteArray = decoder.decode(jiraEncodedProjectName);
+		String jiraProjectName = new String(decodedByteArray);
 		TestApi testapi = new TestApi();
 		createIssue.setJiraIssueType(jiraIssueType);
 		createIssue.setJiraPassword(jiraPassword);

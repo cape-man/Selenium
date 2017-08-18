@@ -1,5 +1,7 @@
 package com.Jira;
 
+import javax.ws.rs.core.MediaType;
+
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
@@ -19,7 +21,7 @@ public class TestApi {
 		//Object to JSON in String
 		String jsonInString = mapper.writeValueAsString(createIssue);
 		ClientResponse response = webResource.header("authorization","Bearer "+header)
-				.type("application/json")
+				.type(MediaType.APPLICATION_JSON)
 				.post(ClientResponse.class,jsonInString);
 		responseData = response.getEntity(String.class);
 		System.out.println(responseData);
