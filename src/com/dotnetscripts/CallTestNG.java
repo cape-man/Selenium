@@ -10,11 +10,11 @@ import com.Jira.TestApi;
 
 public class CallTestNG {
 	public static void main(String[] args) {
-		TestNG testng = new TestNG();
-		ArrayList<String> suite = new ArrayList<String>();
-		suite.add("testng.xml");
-		testng.setTestSuites(suite);
-		testng.run();
+//		TestNG testng = new TestNG();
+//		ArrayList<String> suite = new ArrayList<String>();
+//		suite.add("testng.xml");
+//		testng.setTestSuites(suite);
+//		testng.run();
 		CreateIssue createIssue = new CreateIssue();
 		String url = args[0];  
 		String header = args[1];
