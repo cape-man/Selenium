@@ -7,6 +7,13 @@ String jiraUsername;
 String jiraPassword;
 String jiraIssueType;
 String jiraProjectName;
+String clazz;
+public String getClazz() {
+	return clazz;
+}
+public void setClazz(String clazz) {
+	this.clazz = clazz;
+}
 public String getTestCaseUrl() {
 	return testCaseUrl;
 }

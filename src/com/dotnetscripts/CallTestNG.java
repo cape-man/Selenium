@@ -34,6 +34,7 @@ public class CallTestNG {
 		createIssue.setJiraUrl(jiraUrl);
 		createIssue.setJiraUsername(jiraUsername);
 		createIssue.setTestCaseUrl(testCaseUrl);
+		createIssue.setClazz("com.mindtree.cape.engine.test_automation.service.SeleniumHybridFrameworkServiceImpl");
 		try {
 			testapi.createJiraIssues(url, header, createIssue);
 		} catch (Exception e) {

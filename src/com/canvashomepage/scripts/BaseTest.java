@@ -78,7 +78,7 @@ public void preCondition()
 	}*/
 	
 	driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	
 	String url=Generic.getConfigData("URL");
 	driver.get("http://cape-vsts.southeastasia.cloudapp.azure.com/");

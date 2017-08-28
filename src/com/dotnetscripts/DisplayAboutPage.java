@@ -47,6 +47,8 @@ catch(NoSuchElementException e)
 	status="Failed";
 	System.out.println("Footer is not displayed");
 	Reporter.log("Footer is not displayed");
+	System.out.println("**************************************************");
+	Reporter.log("**************************************************");
 	long endtime = (new Date()).getTime();
 	long Duration = endtime-starttime;
 	Object[] testdetails=new Object[]{"TD4_dotnetApplication","Display About Page","Footer should be displayed in About page",status,(new Date()).getTime(),"1","About Module","Production","1.3",Duration,"Google Chrome","Windows 10","SriHarsha Gadepalli"};
