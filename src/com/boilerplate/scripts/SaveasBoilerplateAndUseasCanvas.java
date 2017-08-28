@@ -32,7 +32,7 @@ public void testSaveasBoilerPlateAndUseasCanvas()
 	canvashomepage.clickProject();
 	canvashomepage.clickCanvas("Use as Canvas");
 	canvas.clickDropdownButton();
-	canvas.DeleteCanvas();
+	canvas.deleteCanvas();
 	boilerplate.clickLocalBoilerplateLink();
 	boilerplate.openBoilerplate();
 	boilerplate.clickDropdownButton();
@@ -51,7 +51,7 @@ public void testSaveasBoilerPlateAndUseasCanvas()
 	canvashomepage.clickProject();
 	canvashomepage.clickCanvas("Use as Canvas");
 	canvas.clickDropdownButton();
-	canvas.DeleteCanvas();
+	canvas.deleteCanvas();
 	Common common=new Common(driver);
 	common.logOut();
 	HomePage home=new HomePage(driver);
