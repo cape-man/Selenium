@@ -18,7 +18,7 @@ public class CallTestNG {
 		CreateIssue createIssue = new CreateIssue();
 		String url = args[0];  
 		String header = args[1];
-		String testCaseUrl = args[2];
+		String testReportUrl = args[2];
 		String jiraUrl = args[3];
 		String jiraUsername = args[4];
 		String jiraPassword = args[5];
@@ -28,13 +28,13 @@ public class CallTestNG {
 		byte[] decodedByteArray = decoder.decode(jiraEncodedProjectName);
 		String jiraProjectName = new String(decodedByteArray);
 		TestApi testapi = new TestApi();
-		createIssue.setJiraIssueType(jiraIssueType);
-		createIssue.setJiraPassword(jiraPassword);
-		createIssue.setJiraProjectName(jiraProjectName);
-		createIssue.setJiraUrl(jiraUrl);
-		createIssue.setJiraUsername(jiraUsername);
-		createIssue.setTestCaseUrl(testCaseUrl);
-		createIssue.setClazz("com.mindtree.cape.engine.test_automation.service.SeleniumHybridFrameworkServiceImpl");
+		createIssue.setIssueType(jiraIssueType);
+		createIssue.setIssueTrackerPassword(jiraPassword);
+		createIssue.setProjectName(jiraProjectName);
+		createIssue.setIssueTrackerUrl(jiraUrl);
+		createIssue.setIssueTrackerUsername(jiraUsername);
+		createIssue.setTestReportUrl(testReportUrl);
+		createIssue.setTestFramework("Selenium");
 		try {
 			testapi.createJiraIssues(url, header, createIssue);
 		} catch (Exception e) {

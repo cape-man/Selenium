@@ -1,53 +1,54 @@
 package com.Jira;
 
 public class CreateIssue {
-String testCaseUrl;
-String jiraUrl;
-String jiraUsername;
-String jiraPassword;
-String jiraIssueType;
-String jiraProjectName;
-String clazz;
-public String getClazz() {
-	return clazz;
+String testReportUrl;
+public String getTestReportUrl() {
+	return testReportUrl;
 }
-public void setClazz(String clazz) {
-	this.clazz = clazz;
+public void setTestReportUrl(String testReportUrl) {
+	this.testReportUrl = testReportUrl;
 }
-public String getTestCaseUrl() {
-	return testCaseUrl;
+public String getIssueTrackerUrl() {
+	return issueTrackerUrl;
 }
-public void setTestCaseUrl(String testCaseUrl) {
-	this.testCaseUrl = testCaseUrl;
+public void setIssueTrackerUrl(String issueTrackerUrl) {
+	this.issueTrackerUrl = issueTrackerUrl;
 }
-public String getJiraUrl() {
-	return jiraUrl;
+public String getIssueTrackerUsername() {
+	return issueTrackerUsername;
 }
-public void setJiraUrl(String jiraUrl) {
-	this.jiraUrl = jiraUrl;
+public void setIssueTrackerUsername(String issueTrackerUsername) {
+	this.issueTrackerUsername = issueTrackerUsername;
 }
-public String getJiraUsername() {
-	return jiraUsername;
+public String getIssueTrackerPassword() {
+	return issueTrackerPassword;
 }
-public void setJiraUsername(String jiraUsername) {
-	this.jiraUsername = jiraUsername;
+public void setIssueTrackerPassword(String issueTrackerPassword) {
+	this.issueTrackerPassword = issueTrackerPassword;
 }
-public String getJiraPassword() {
-	return jiraPassword;
+public String getIssueType() {
+	return issueType;
 }
-public void setJiraPassword(String jiraPassword) {
-	this.jiraPassword = jiraPassword;
+public void setIssueType(String issueType) {
+	this.issueType = issueType;
 }
-public String getJiraIssueType() {
-	return jiraIssueType;
+public String getProjectName() {
+	return projectName;
 }
-public void setJiraIssueType(String jiraIssueType) {
-	this.jiraIssueType = jiraIssueType;
+public void setProjectName(String projectName) {
+	this.projectName = projectName;
 }
-public String getJiraProjectName() {
-	return jiraProjectName;
+public String getTestFramework() {
+	return testFramework;
 }
-public void setJiraProjectName(String jiraProjectName) {
-	this.jiraProjectName = jiraProjectName;
+public void setTestFramework(String testFramework) {
+	this.testFramework = testFramework;
 }
+String issueTrackerUrl;
+String issueTrackerUsername;
+String issueTrackerPassword;
+String issueType;
+String projectName;
+String testFramework;
 }
+

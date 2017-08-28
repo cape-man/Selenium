@@ -22,10 +22,10 @@ public class TestApi {
 		response.bufferEntity();
 		if(response.getStatus()==200 || response.getStatus()==201)
 		{
-			System.out.println("Issue created succcesfully in Jira");
+			System.out.println("Action successful on generated test reports");
 		}
 		else
-			System.out.println("Failed : Unable to create issue");
+			System.out.println(response);
 	}
 
 }
