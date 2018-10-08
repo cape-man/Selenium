@@ -44,11 +44,25 @@ public String getTestFramework() {
 public void setTestFramework(String testFramework) {
 	this.testFramework = testFramework;
 }
+public String getJiraIssueSummary() {
+	return jiraIssueSummary;
+}
+public void setJiraIssueSummary(String jiraIssueSummary) {
+	this.jiraIssueSummary = jiraIssueSummary;
+}
+public String getJiraIssueDescription() {
+	return jiraIssueDescription;
+}
+public void setJiraIssueDescription(String jiraIssueDescription) {
+	this.jiraIssueDescription = jiraIssueDescription;
+}
 String issueTrackerUrl;
 String issueTrackerUsername;
 String issueTrackerPassword;
 String issueType;
 String projectName;
+String jiraIssueSummary;
+String jiraIssueDescription;
 String testFramework;
 }
 
