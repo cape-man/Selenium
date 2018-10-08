@@ -35,6 +35,8 @@ public class CallTestNG {
 		createIssue.setIssueTrackerUsername(jiraUsername);
 		createIssue.setTestReportUrl(testReportUrl);
 		createIssue.setTestFramework("Selenium");
+		createIssue.jiraIssueDescription("Created through CAPE");
+		createIssue.jiraIssueSummary(" ");
 		try {
 			testapi.createJiraIssues(url, header, createIssue);
 		} catch (Exception e) {
