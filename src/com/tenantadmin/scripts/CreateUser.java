@@ -23,8 +23,8 @@ public void testCreateUser()
 	TenantAdminManageTenant tenantadminmanagetenant=new TenantAdminManageTenant(driver);
 	tenantadminmanagetenant.createUser();
 	Assert.assertEquals(driver.findElement(By.xpath("//td[contains(text(),'autouser@mindtree.com')]")).isDisplayed(), true);
-	System.out.println("User is created successfully");
-	Reporter.log("User is created successfully");
+	System.out.println("User is created Successfully");
+	Reporter.log("User is created Successfully");
 	System.out.println("******************************CreateUser******************************");
 	Reporter.log("******************************CreateUser******************************");
 }
