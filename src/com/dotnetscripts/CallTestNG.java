@@ -11,12 +11,12 @@ import com.Jira.TestApi;
 public class CallTestNG {
 	public static void main(String[] args) {
 		TestNG testng = new TestNG();
-		ArrayList<String> suite = new ArrayList<String>();
+		ArrayList<String> suite = new ArrayList<>();
 		suite.add("testng.xml");
 		testng.setTestSuites(suite);
 		testng.run();
 		CreateIssue createIssue = new CreateIssue();
-		String url = args[0];  
+		String url = args[0];
 		String header = args[1];
 		String testReportUrl = args[2];
 		String jiraUrl = args[3];
@@ -35,8 +35,8 @@ public class CallTestNG {
 		createIssue.setIssueTrackerUsername(jiraUsername);
 		createIssue.setTestReportUrl(testReportUrl);
 		createIssue.setTestFramework("Selenium");
-		createIssue.jiraIssueDescription("Created through CAPE");
-		createIssue.jiraIssueSummary(" ");
+		createIssue.setJiraIssueDescription("Created through CAPE");
+		createIssue.setJiraIssueSummary(" ");
 		try {
 			testapi.createJiraIssues(url, header, createIssue);
 		} catch (Exception e) {
