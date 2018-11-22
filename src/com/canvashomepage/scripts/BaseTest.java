@@ -52,7 +52,7 @@ public void preCondition()
 	String browser=Generic.getConfigData("BROWSER");
 	//if(browser.equals("GC"))
 	//{
-		//System.setProperty("webdriver.chrome.driver", "./exe/chromedriver");
+		//System.setProperty("webdriver.chrome.driver", "./exe/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 
@@ -81,7 +81,7 @@ public void preCondition()
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	
 	String url=Generic.getConfigData("URL");
-	driver.get("http://cape-vsts.southeastasia.cloudapp.azure.com/");
+	driver.get("http://cape-win.southeastasia.cloudapp.azure.com:8080/");
 	System.out.println("url is opened");
 	Reporter.log("url is opened");
 	driver.navigate().refresh();
@@ -138,7 +138,7 @@ public void closeExcel()
 	
 	try 
 	{
-	FileOutputStream out=new FileOutputStream(new File("C:\\Program Files (x86)\\Nginx\\html\\TestReports\\TestResult.xls"));
+	FileOutputStream out=new FileOutputStream(new File(System.getProperty("user.dir"))+"\\xls\\results\\TestResult.xls");
 	//FileOutputStream out=new FileOutputStream(new File("./xls/TestResult.xls"));
 	workbook.write(out);
 	out.close();
