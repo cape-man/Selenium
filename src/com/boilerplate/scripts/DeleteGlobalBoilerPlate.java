@@ -12,7 +12,7 @@ public class DeleteGlobalBoilerPlate extends BaseTest
 @Test
 public void testDeleteGlobalBoilerPlate()
 {
-	System.out.println("******************************DeleteGlobalBoilerPlate********************************");
+	System.out.println("********************************DeleteGlobalBoilerPlate********************************");
 	Reporter.log("******************************DeleteGlobalBoilerPlate********************************");
 	HomePage home=new HomePage(driver);
 	home.rootadminLogin();
