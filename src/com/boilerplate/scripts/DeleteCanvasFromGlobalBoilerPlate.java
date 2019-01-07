@@ -24,7 +24,7 @@ public void testDeleteCanvasFromGlobalBoilerPlate()
 	canvas.clickDropdownButton();
 	canvas.deleteCanvas();
 	canvas.confirmDeleteCanvas();
-	System.out.println("******************************DeleteCanvasFromGlobalBoilerPlate******************************");
-	Reporter.log("******************************DeleteCanvasFromGlobalBoilerPlate******************************");
+	System.out.println("******************************DeleteCanvasFromGlobalBoilerPlate********************************");
+	Reporter.log("******************************DeleteCanvasFromGlobalBoilerPlate********************************");
 }
 }
