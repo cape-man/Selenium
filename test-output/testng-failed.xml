@@ -3,15 +3,24 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.dotnetscripts.DisplayContactPage">
+      <class name="com.dotnetscripts.DisplayLoginPage2">
         <methods>
+          <include name="testDisplayLoginPage"/>
           <include name="openExcel"/>
-          <include name="testDisplayContactPage"/>
+          <include name="closeExcel"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.dotnetscripts.DisplayLoginPage2 -->
+      <class name="com.dotnetscripts.DisplayAboutPage2">
+        <methods>
+          <include name="testDisplayAboutPage"/>
+          <include name="openExcel"/>
           <include name="closeExcel"/>
           <include name="preCondition"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- com.dotnetscripts.DisplayContactPage -->
+      </class> <!-- com.dotnetscripts.DisplayAboutPage2 -->
       <class name="com.dotnetscripts.DisplayContactPage1">
         <methods>
           <include name="openExcel"/>
@@ -21,15 +30,69 @@
           <include name="postCondition"/>
         </methods>
       </class> <!-- com.dotnetscripts.DisplayContactPage1 -->
+      <class name="com.dotnetscripts.DisplayRegisterPage1">
+        <methods>
+          <include name="openExcel"/>
+          <include name="closeExcel"/>
+          <include name="testDisplayRegisterPage"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.dotnetscripts.DisplayRegisterPage1 -->
+      <class name="com.dotnetscripts.DisplayAboutPage">
+        <methods>
+          <include name="testDisplayAboutPage"/>
+          <include name="openExcel"/>
+          <include name="closeExcel"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.dotnetscripts.DisplayAboutPage -->
       <class name="com.dotnetscripts.DisplayContactPage2">
         <methods>
           <include name="openExcel"/>
           <include name="closeExcel"/>
           <include name="testDisplayContactPage1"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.dotnetscripts.DisplayContactPage2 -->
+      <class name="com.dotnetscripts.DisplayRegisterPage2">
+        <methods>
+          <include name="testDisplayRegisterPage"/>
+          <include name="openExcel"/>
+          <include name="closeExcel"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.dotnetscripts.DisplayRegisterPage2 -->
+      <class name="com.dotnetscripts.DisplayAboutPage1">
+        <methods>
+          <include name="testDisplayAboutPage"/>
+          <include name="openExcel"/>
+          <include name="closeExcel"/>
           <include name="preCondition"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- com.dotnetscripts.DisplayContactPage2 -->
+      </class> <!-- com.dotnetscripts.DisplayAboutPage1 -->
+      <class name="com.dotnetscripts.DisplayLoginPage1">
+        <methods>
+          <include name="testDisplayLoginPage"/>
+          <include name="openExcel"/>
+          <include name="closeExcel"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.dotnetscripts.DisplayLoginPage1 -->
+      <class name="com.dotnetscripts.DisplayContactPage">
+        <methods>
+          <include name="openExcel"/>
+          <include name="testDisplayContactPage"/>
+          <include name="closeExcel"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.dotnetscripts.DisplayContactPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

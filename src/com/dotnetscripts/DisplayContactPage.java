@@ -18,7 +18,7 @@ public void testDisplayContactPage()
 	System.out.println("clicked on contact link");
 	Reporter.log("clicked on contact link");
 	String status="N.A";
-	if(driver.findElement(By.xpath("//p[text()='© 2017 - My ASP.NET Application']")).isDisplayed())
+	if(driver.findElement(By.xpath("//p[text()='© 2018 - My ASP.NET Application']")).isDisplayed())
 	{
 		status="Pass";
 		System.out.println("Footer is displayed");

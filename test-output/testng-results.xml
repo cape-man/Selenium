@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="44" total="56" passed="9" failed="3" skipped="0">
+<testng-results ignored="44" total="56" passed="2" failed="10" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Chrome Browser is opened]]>
@@ -26,125 +26,19 @@
       <![CDATA[**************************************************]]>
     </line>
     <line>
-      <![CDATA[clicked on contact link]]>
-    </line>
-    <line>
-      <![CDATA[clicked on about link]]>
-    </line>
-    <line>
-      <![CDATA[Footer is not displayed]]>
-    </line>
-    <line>
-      <![CDATA[**************************************************]]>
-    </line>
-    <line>
-      <![CDATA[clicked on login link]]>
-    </line>
-    <line>
-      <![CDATA[login button is displayed]]>
-    </line>
-    <line>
-      <![CDATA[**************************************************]]>
-    </line>
-    <line>
-      <![CDATA[clicked on register link]]>
-    </line>
-    <line>
-      <![CDATA[register button is not displayed]]>
-    </line>
-    <line>
-      <![CDATA[**************************************************]]>
-    </line>
-    <line>
-      <![CDATA[clicked on contact link]]>
-    </line>
-    <line>
-      <![CDATA[clicked on about link]]>
-    </line>
-    <line>
-      <![CDATA[Footer is not displayed]]>
-    </line>
-    <line>
-      <![CDATA[**************************************************]]>
-    </line>
-    <line>
-      <![CDATA[clicked on login link]]>
-    </line>
-    <line>
-      <![CDATA[login button is displayed]]>
-    </line>
-    <line>
-      <![CDATA[**************************************************]]>
-    </line>
-    <line>
-      <![CDATA[clicked on register link]]>
-    </line>
-    <line>
-      <![CDATA[register button is not displayed]]>
-    </line>
-    <line>
-      <![CDATA[**************************************************]]>
-    </line>
-    <line>
-      <![CDATA[clicked on contact link]]>
-    </line>
-    <line>
-      <![CDATA[clicked on about link]]>
-    </line>
-    <line>
-      <![CDATA[Footer is not displayed]]>
-    </line>
-    <line>
-      <![CDATA[**************************************************]]>
-    </line>
-    <line>
       <![CDATA[Browser is closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2018-11-22T11:18:50Z" name="Suite" finished-at="2018-11-22T11:19:44Z" duration-ms="53959">
+  <suite started-at="2018-11-22T12:00:55Z" name="Suite" finished-at="2018-11-22T12:01:06Z" duration-ms="11240">
     <groups>
     </groups>
-    <test started-at="2018-11-22T11:18:50Z" name="Test" finished-at="2018-11-22T11:19:44Z" duration-ms="53959">
+    <test started-at="2018-11-22T12:00:55Z" name="Test" finished-at="2018-11-22T12:01:06Z" duration-ms="11240">
       <class name="com.dotnetscripts.DisplayContactPage">
-        <test-method signature="testDisplayContactPage()[pri:0, instance:com.dotnetscripts.DisplayContactPage@610f7aa]" started-at="2018-11-22T11:19:00Z" name="testDisplayContactPage" finished-at="2018-11-22T11:19:05Z" duration-ms="5263" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='© 2017 - My ASP.NET Application']"}
-  (Session info: chrome=70.0.3538.77)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.06 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir14844_17655}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 8002b415566e121aa1df54790d179baa
-*** Element info: {Using=xpath, value=//p[text()='© 2017 - My ASP.NET Application']}]]>
-            </message>
+        <test-method signature="testDisplayContactPage()[pri:0, instance:com.dotnetscripts.DisplayContactPage@149e0f5d]" started-at="2018-11-22T12:01:05Z" name="testDisplayContactPage" finished-at="2018-11-22T12:01:05Z" duration-ms="48" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='© 2017 - My ASP.NET Application']"}
-  (Session info: chrome=70.0.3538.77)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.06 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir14844_17655}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 8002b415566e121aa1df54790d179baa
-*** Element info: {Using=xpath, value=//p[text()='© 2017 - My ASP.NET Application']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at com.dotnetscripts.DisplayContactPage.testDisplayContactPage(DisplayContactPage.java:21)
+              <![CDATA[java.lang.NullPointerException
+at com.dotnetscripts.DisplayContactPage.testDisplayContactPage(DisplayContactPage.java:17)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -167,25 +61,20 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 at org.testng.TestNG.runSuites(TestNG.java:1049)
 at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at com.dotnetscripts.CallTestNG.main(CallTestNG.java:17)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
-            <line>
-              <![CDATA[clicked on contact link]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testDisplayContactPage -->
       </class> <!-- com.dotnetscripts.DisplayContactPage -->
       <class name="com.dotnetscripts.DisplayLoginPage">
-        <test-method is-config="true" signature="openExcel()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@175b9425]" started-at="2018-11-22T11:18:50Z" name="openExcel" finished-at="2018-11-22T11:18:50Z" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="openExcel()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@1184ab05]" started-at="2018-11-22T12:00:55Z" name="openExcel" finished-at="2018-11-22T12:00:55Z" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openExcel -->
-        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@175b9425]" started-at="2018-11-22T11:18:50Z" name="preCondition" finished-at="2018-11-22T11:18:54Z" duration-ms="4559" status="PASS">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@1184ab05]" started-at="2018-11-22T12:00:55Z" name="preCondition" finished-at="2018-11-22T12:00:59Z" duration-ms="4568" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Chrome Browser is opened]]>
@@ -195,7 +84,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="testDisplayLoginPage()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@175b9425]" started-at="2018-11-22T11:18:54Z" name="testDisplayLoginPage" finished-at="2018-11-22T11:18:55Z" duration-ms="423" status="PASS">
+        <test-method signature="testDisplayLoginPage()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@1184ab05]" started-at="2018-11-22T12:00:59Z" name="testDisplayLoginPage" finished-at="2018-11-22T12:01:00Z" duration-ms="310" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[clicked on login link]]>
@@ -208,11 +97,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- testDisplayLoginPage -->
-        <test-method is-config="true" signature="closeExcel()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@175b9425]" started-at="2018-11-22T11:19:43Z" name="closeExcel" finished-at="2018-11-22T11:19:43Z" duration-ms="47" status="PASS">
+        <test-method is-config="true" signature="closeExcel()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@1184ab05]" started-at="2018-11-22T12:01:05Z" name="closeExcel" finished-at="2018-11-22T12:01:05Z" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeExcel -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@175b9425]" started-at="2018-11-22T11:19:43Z" name="postCondition" finished-at="2018-11-22T11:19:44Z" duration-ms="1008" status="PASS">
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.dotnetscripts.DisplayLoginPage@1184ab05]" started-at="2018-11-22T12:01:05Z" name="postCondition" finished-at="2018-11-22T12:01:06Z" duration-ms="842" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is closed]]>
@@ -221,7 +110,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- postCondition -->
       </class> <!-- com.dotnetscripts.DisplayLoginPage -->
       <class name="com.dotnetscripts.DisplayRegisterPage">
-        <test-method signature="testDisplayRegisterPage()[pri:0, instance:com.dotnetscripts.DisplayRegisterPage@3098cf3b]" started-at="2018-11-22T11:18:55Z" name="testDisplayRegisterPage" finished-at="2018-11-22T11:19:00Z" duration-ms="5267" status="PASS">
+        <test-method signature="testDisplayRegisterPage()[pri:0, instance:com.dotnetscripts.DisplayRegisterPage@3aefe5e5]" started-at="2018-11-22T12:01:00Z" name="testDisplayRegisterPage" finished-at="2018-11-22T12:01:05Z" duration-ms="5190" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[clicked on register link]]>
@@ -236,33 +125,33 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testDisplayRegisterPage -->
       </class> <!-- com.dotnetscripts.DisplayRegisterPage -->
       <class name="com.dotnetscripts.DisplayContactPage1">
-        <test-method signature="testDisplayContactPage1()[pri:0, instance:com.dotnetscripts.DisplayContactPage1@5609159b]" started-at="2018-11-22T11:19:16Z" name="testDisplayContactPage1" finished-at="2018-11-22T11:19:21Z" duration-ms="5247" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="testDisplayContactPage1()[pri:0, instance:com.dotnetscripts.DisplayContactPage1@ef9296d]" started-at="2018-11-22T12:01:05Z" name="testDisplayContactPage1" finished-at="2018-11-22T12:01:05Z" duration-ms="16" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='© 2017 - My ASP.NET Application']"}
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 16 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir14844_17655}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 8002b415566e121aa1df54790d179baa
-*** Element info: {Using=xpath, value=//p[text()='© 2017 - My ASP.NET Application']}]]>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=Contact}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='© 2017 - My ASP.NET Application']"}
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 16 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir14844_17655}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 8002b415566e121aa1df54790d179baa
-*** Element info: {Using=xpath, value=//p[text()='© 2017 - My ASP.NET Application']}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=Contact}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -271,10 +160,10 @@ at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at com.dotnetscripts.DisplayContactPage1.testDisplayContactPage1(DisplayContactPage1.java:21)
+at com.dotnetscripts.DisplayContactPage1.testDisplayContactPage1(DisplayContactPage1.java:17)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -297,107 +186,42 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 at org.testng.TestNG.runSuites(TestNG.java:1049)
 at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at com.dotnetscripts.CallTestNG.main(CallTestNG.java:17)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
-            <line>
-              <![CDATA[clicked on contact link]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testDisplayContactPage1 -->
       </class> <!-- com.dotnetscripts.DisplayContactPage1 -->
       <class name="com.dotnetscripts.DisplayAboutPage1">
-        <test-method signature="testDisplayAboutPage()[pri:0, instance:com.dotnetscripts.DisplayAboutPage1@2118cddf]" started-at="2018-11-22T11:19:21Z" name="testDisplayAboutPage" finished-at="2018-11-22T11:19:27Z" duration-ms="5218" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[clicked on about link]]>
-            </line>
-            <line>
-              <![CDATA[Footer is not displayed]]>
-            </line>
-            <line>
-              <![CDATA[**************************************************]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testDisplayAboutPage -->
-      </class> <!-- com.dotnetscripts.DisplayAboutPage1 -->
-      <class name="com.dotnetscripts.DisplayAboutPage2">
-        <test-method signature="testDisplayAboutPage()[pri:0, instance:com.dotnetscripts.DisplayAboutPage2@11fc564b]" started-at="2018-11-22T11:19:37Z" name="testDisplayAboutPage" finished-at="2018-11-22T11:19:43Z" duration-ms="5295" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[clicked on about link]]>
-            </line>
-            <line>
-              <![CDATA[Footer is not displayed]]>
-            </line>
-            <line>
-              <![CDATA[**************************************************]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testDisplayAboutPage -->
-      </class> <!-- com.dotnetscripts.DisplayAboutPage2 -->
-      <class name="com.dotnetscripts.DisplayAboutPage">
-        <test-method signature="testDisplayAboutPage()[pri:0, instance:com.dotnetscripts.DisplayAboutPage@6a03bcb1]" started-at="2018-11-22T11:19:05Z" name="testDisplayAboutPage" finished-at="2018-11-22T11:19:11Z" duration-ms="5222" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[clicked on about link]]>
-            </line>
-            <line>
-              <![CDATA[Footer is not displayed]]>
-            </line>
-            <line>
-              <![CDATA[**************************************************]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testDisplayAboutPage -->
-      </class> <!-- com.dotnetscripts.DisplayAboutPage -->
-      <class name="com.dotnetscripts.DisplayRegisterPage2">
-        <test-method signature="testDisplayRegisterPage()[pri:0, instance:com.dotnetscripts.DisplayRegisterPage2@68567e20]" started-at="2018-11-22T11:19:27Z" name="testDisplayRegisterPage" finished-at="2018-11-22T11:19:32Z" duration-ms="5246" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[clicked on register link]]>
-            </line>
-            <line>
-              <![CDATA[register button is not displayed]]>
-            </line>
-            <line>
-              <![CDATA[**************************************************]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testDisplayRegisterPage -->
-      </class> <!-- com.dotnetscripts.DisplayRegisterPage2 -->
-      <class name="com.dotnetscripts.DisplayContactPage2">
-        <test-method signature="testDisplayContactPage1()[pri:0, instance:com.dotnetscripts.DisplayContactPage2@76ed1b7c]" started-at="2018-11-22T11:19:32Z" name="testDisplayContactPage1" finished-at="2018-11-22T11:19:37Z" duration-ms="5223" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="testDisplayAboutPage()[pri:0, instance:com.dotnetscripts.DisplayAboutPage1@36c88a32]" started-at="2018-11-22T12:01:05Z" name="testDisplayAboutPage" finished-at="2018-11-22T12:01:05Z" duration-ms="16" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='© 2017 - My ASP.NET Application']"}
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 16 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir14844_17655}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 8002b415566e121aa1df54790d179baa
-*** Element info: {Using=xpath, value=//p[text()='© 2017 - My ASP.NET Application']}]]>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=About}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='© 2017 - My ASP.NET Application']"}
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=70.0.3538.77)
   (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 16 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir14844_17655}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 8002b415566e121aa1df54790d179baa
-*** Element info: {Using=xpath, value=//p[text()='© 2017 - My ASP.NET Application']}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=About}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -406,10 +230,10 @@ at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at com.dotnetscripts.DisplayContactPage2.testDisplayContactPage1(DisplayContactPage2.java:21)
+at com.dotnetscripts.DisplayAboutPage1.testDisplayAboutPage(DisplayAboutPage1.java:21)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -432,61 +256,501 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 at org.testng.TestNG.runSuites(TestNG.java:1049)
 at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at com.dotnetscripts.CallTestNG.main(CallTestNG.java:17)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
-            <line>
-              <![CDATA[clicked on contact link]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testDisplayContactPage1 -->
-      </class> <!-- com.dotnetscripts.DisplayContactPage2 -->
-      <class name="com.dotnetscripts.DisplayRegisterPage1">
-        <test-method signature="testDisplayRegisterPage()[pri:0, instance:com.dotnetscripts.DisplayRegisterPage1@57250572]" started-at="2018-11-22T11:19:11Z" name="testDisplayRegisterPage" finished-at="2018-11-22T11:19:16Z" duration-ms="5211" status="PASS">
+        </test-method> <!-- testDisplayAboutPage -->
+      </class> <!-- com.dotnetscripts.DisplayAboutPage1 -->
+      <class name="com.dotnetscripts.DisplayAboutPage2">
+        <test-method signature="testDisplayAboutPage()[pri:0, instance:com.dotnetscripts.DisplayAboutPage2@6ef888f6]" started-at="2018-11-22T12:01:05Z" name="testDisplayAboutPage" finished-at="2018-11-22T12:01:05Z" duration-ms="15" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=About}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=About}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at com.dotnetscripts.DisplayAboutPage2.testDisplayAboutPage(DisplayAboutPage2.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.dotnetscripts.CallTestNG.main(CallTestNG.java:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
-            <line>
-              <![CDATA[clicked on register link]]>
-            </line>
-            <line>
-              <![CDATA[register button is not displayed]]>
-            </line>
-            <line>
-              <![CDATA[**************************************************]]>
-            </line>
+          </reporter-output>
+        </test-method> <!-- testDisplayAboutPage -->
+      </class> <!-- com.dotnetscripts.DisplayAboutPage2 -->
+      <class name="com.dotnetscripts.DisplayRegisterPage2">
+        <test-method signature="testDisplayRegisterPage()[pri:0, instance:com.dotnetscripts.DisplayRegisterPage2@5be6e01c]" started-at="2018-11-22T12:01:05Z" name="testDisplayRegisterPage" finished-at="2018-11-22T12:01:05Z" duration-ms="16" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=Register}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=Register}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at com.dotnetscripts.DisplayRegisterPage2.testDisplayRegisterPage(DisplayRegisterPage2.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.dotnetscripts.CallTestNG.main(CallTestNG.java:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDisplayRegisterPage -->
+      </class> <!-- com.dotnetscripts.DisplayRegisterPage2 -->
+      <class name="com.dotnetscripts.DisplayAboutPage">
+        <test-method signature="testDisplayAboutPage()[pri:0, instance:com.dotnetscripts.DisplayAboutPage@1b1473ab]" started-at="2018-11-22T12:01:05Z" name="testDisplayAboutPage" finished-at="2018-11-22T12:01:05Z" duration-ms="15" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=About}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=About}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at com.dotnetscripts.DisplayAboutPage.testDisplayAboutPage(DisplayAboutPage.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.dotnetscripts.CallTestNG.main(CallTestNG.java:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDisplayAboutPage -->
+      </class> <!-- com.dotnetscripts.DisplayAboutPage -->
+      <class name="com.dotnetscripts.DisplayRegisterPage1">
+        <test-method signature="testDisplayRegisterPage()[pri:0, instance:com.dotnetscripts.DisplayRegisterPage1@6af93788]" started-at="2018-11-22T12:01:05Z" name="testDisplayRegisterPage" finished-at="2018-11-22T12:01:05Z" duration-ms="15" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=Register}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=Register}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at com.dotnetscripts.DisplayRegisterPage1.testDisplayRegisterPage(DisplayRegisterPage1.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.dotnetscripts.CallTestNG.main(CallTestNG.java:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
           </reporter-output>
         </test-method> <!-- testDisplayRegisterPage -->
       </class> <!-- com.dotnetscripts.DisplayRegisterPage1 -->
-      <class name="com.dotnetscripts.DisplayLoginPage2">
-        <test-method signature="testDisplayLoginPage()[pri:0, instance:com.dotnetscripts.DisplayLoginPage2@17a7f733]" started-at="2018-11-22T11:19:27Z" name="testDisplayLoginPage" finished-at="2018-11-22T11:19:27Z" duration-ms="253" status="PASS">
+      <class name="com.dotnetscripts.DisplayContactPage2">
+        <test-method signature="testDisplayContactPage1()[pri:0, instance:com.dotnetscripts.DisplayContactPage2@1c93084c]" started-at="2018-11-22T12:01:05Z" name="testDisplayContactPage1" finished-at="2018-11-22T12:01:05Z" duration-ms="16" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=Contact}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=Contact}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at com.dotnetscripts.DisplayContactPage2.testDisplayContactPage1(DisplayContactPage2.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.dotnetscripts.CallTestNG.main(CallTestNG.java:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
-            <line>
-              <![CDATA[clicked on login link]]>
-            </line>
-            <line>
-              <![CDATA[login button is displayed]]>
-            </line>
-            <line>
-              <![CDATA[**************************************************]]>
-            </line>
+          </reporter-output>
+        </test-method> <!-- testDisplayContactPage1 -->
+      </class> <!-- com.dotnetscripts.DisplayContactPage2 -->
+      <class name="com.dotnetscripts.DisplayLoginPage2">
+        <test-method signature="testDisplayLoginPage()[pri:0, instance:com.dotnetscripts.DisplayLoginPage2@7880cdf3]" started-at="2018-11-22T12:01:05Z" name="testDisplayLoginPage" finished-at="2018-11-22T12:01:05Z" duration-ms="15" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=Log in}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=Log in}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at com.dotnetscripts.DisplayLoginPage2.testDisplayLoginPage(DisplayLoginPage2.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.dotnetscripts.CallTestNG.main(CallTestNG.java:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
           </reporter-output>
         </test-method> <!-- testDisplayLoginPage -->
       </class> <!-- com.dotnetscripts.DisplayLoginPage2 -->
       <class name="com.dotnetscripts.DisplayLoginPage1">
-        <test-method signature="testDisplayLoginPage()[pri:0, instance:com.dotnetscripts.DisplayLoginPage1@21b2e768]" started-at="2018-11-22T11:19:11Z" name="testDisplayLoginPage" finished-at="2018-11-22T11:19:11Z" duration-ms="267" status="PASS">
+        <test-method signature="testDisplayLoginPage()[pri:0, instance:com.dotnetscripts.DisplayLoginPage1@2f7c2f4f]" started-at="2018-11-22T12:01:05Z" name="testDisplayLoginPage" finished-at="2018-11-22T12:01:05Z" duration-ms="16" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=Log in}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'A2ML29097', ip: '10.52.12.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\M1048771\AppData\Local\Temp\scoped_dir18676_31766}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.77, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf547ea8485a21bfab5bcaa63c6fb760
+*** Element info: {Using=link text, value=Log in}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at com.dotnetscripts.DisplayLoginPage1.testDisplayLoginPage(DisplayLoginPage1.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.dotnetscripts.CallTestNG.main(CallTestNG.java:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
-            <line>
-              <![CDATA[clicked on login link]]>
-            </line>
-            <line>
-              <![CDATA[login button is displayed]]>
-            </line>
-            <line>
-              <![CDATA[**************************************************]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testDisplayLoginPage -->
       </class> <!-- com.dotnetscripts.DisplayLoginPage1 -->
