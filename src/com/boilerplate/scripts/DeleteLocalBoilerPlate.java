@@ -14,7 +14,7 @@ public class DeleteLocalBoilerPlate extends BaseTest
 @Test
 public void testDeleteLocalBoilerPlate()
 {
-	System.out.println("****************************DeleteLocalBoilerPlate******************************");
+	System.out.println("**************************DeleteLocalBoilerPlate******************************");
 	Reporter.log("******************************DeleteLocalBoilerPlate******************************");
 	HomePage homepage=new HomePage(driver);
 	homepage.validLogIn();
