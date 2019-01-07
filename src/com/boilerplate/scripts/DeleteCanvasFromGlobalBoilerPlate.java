@@ -14,7 +14,7 @@ public class DeleteCanvasFromGlobalBoilerPlate extends BaseTest
 public void testDeleteCanvasFromGlobalBoilerPlate()
 {
 	System.out.println("******************************DeleteCanvasFromGlobalBoilerPlate********************************");
-	Reporter.log("******************************DeleteCanvasFromGlobalBoilerPlate********************************");
+	Reporter.log("******************************DeleteCanvasFromGlobalBoilerPlate********************************    ");
 	HomePage homepage=new HomePage(driver);
 	homepage.validLogIn();
 	TenantUserProject canvashomepage=new TenantUserProject(driver);
