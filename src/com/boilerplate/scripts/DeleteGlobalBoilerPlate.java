@@ -12,8 +12,8 @@ public class DeleteGlobalBoilerPlate extends BaseTest
 @Test
 public void testDeleteGlobalBoilerPlate()
 {
-	System.out.println("******************************DeleteGlobalBoilerPlate******************************");
-	Reporter.log("******************************DeleteGlobalBoilerPlate******************************");
+	System.out.println("******************************DeleteGlobalBoilerPlate********************************");
+	Reporter.log("******************************DeleteGlobalBoilerPlate********************************");
 	HomePage home=new HomePage(driver);
 	home.rootadminLogin();
 	BoilerPlate boilerplate=new BoilerPlate(driver);
@@ -21,7 +21,7 @@ public void testDeleteGlobalBoilerPlate()
 	boilerplate.openBoilerplate();
 	boilerplate.clickDropdownButton();
 	boilerplate.clickDeleteBoilerplate();
-	System.out.println("******************************DeleteGlobalBoilerPlate******************************");
-	Reporter.log("******************************DeleteGlobalBoilerPlate******************************");
+	System.out.println("******************************DeleteGlobalBoilerPlate********************************");
+	Reporter.log("******************************DeleteGlobalBoilerPlate********************************");
 }
 }
