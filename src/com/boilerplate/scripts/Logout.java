@@ -14,6 +14,6 @@ public void logOut()
 	HomePage homepage=new HomePage(driver);
 	homepage.validLogIn();
 	Common common=new Common(driver);
-	common.logOut();//commented line
+	common.logOut();//commented line1
 }
 }
