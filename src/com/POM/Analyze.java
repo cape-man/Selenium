@@ -14,7 +14,7 @@ public class Analyze
 	
 	public Analyze(WebDriver driver)
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this);//Constructor Initialization
 	}
 	
 	
